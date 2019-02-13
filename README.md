@@ -3,9 +3,9 @@
 - Luca Muggiasca (docente responsabile)
 
 ## Informazioni
-Iniziato il: ---
+Iniziato il: 2019.02.13
 
-Data di consegna: ---
+Data di consegna: 2019.05.17
 
 - [Quaderno dei compiti](muggiasca_qdc_consultazioneProgetti.pdf)
 
@@ -15,5 +15,3 @@ Data di consegna: ---
 ## Importante
 - [GitHub CheatSheet](Guide/github-cheatsheet.pdf)
 - [MarkDown CheatSheet](Guide/markdownCheatSheet.md)
-
-

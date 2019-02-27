@@ -145,7 +145,7 @@
 Appena iniziato il progetto mettiamo giù la pianificazione, per sapere come sarà svolto il progetto e subito dopo tutte le analisi sul progetto.
 Dopo svolgiamo uno alla volta la pianificazione e poi l'implementazione di ogni modulo, testando pure il loro funzionamento individuale e tutti insieme all'interno del sito.
 
-<img src="Pianificazione/Gantt.png" alt="Gantt">
+<img src="Pianificazione/Gantt.png" alt="Gantt" border="5">
 
 ### Analisi dei mezzi
 
@@ -183,8 +183,19 @@ Descrive:
 
 ### Design dei dati e database
 
-Descrizione delle strutture di dati utilizzate dal programma in base
-agli attributi e le relazioni degli oggetti in uso.
+Basandosi sul <b>REQ-02</b> aggiungere la colonna <b>link-repo"</b> alla tabella "project".
+
+project(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id int(11),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title varchar(40),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description varchar(200),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final_vote int(11),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;progress int(11),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comment longtext,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id_responsible int(11),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doc_path varchar(260),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>link_repo text</b><br>
+)
 
 ### Schema E-R, schema logico e descrizione.
 

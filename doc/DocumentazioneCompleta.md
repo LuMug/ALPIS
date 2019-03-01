@@ -66,8 +66,7 @@
   - <b>Data di inizio: </b>2019.02.13
 
   - <b>Data di fine: </b>2019.05.17
-
-
+  
 ### Abstract
 
   E’ una breve e accurata rappresentazione dei contenuti di un documento,
@@ -136,9 +135,66 @@
   |**Versione**|1.0                   |
   |**Note**    |Quando si aggiunge un progetto, deve esistere la possibilità di aggiungere anche il link ad una possibile repository su git.|
   |            |**Sotto requisiti** |
-  |**001**      | Aggiungere alla tabella <b>project</b> del database <b>efof_lpiarch2018</b> la colonna "link_repo" |
+  |**001**      | Aggiunta alla tabella <b>project</b>, del database <b>efof_lpiarch2018</b>, la colonna "<b>link_repo</b>" |
   |**002**      | Nella sezione dove si può aggiunge un nuovo progetto, aggiungere all'iterfaccia poter aggiungere il link della repository del progetto|
   |**003**      | Aggiungere la funzinalità sul sito |
+
+
+  |ID  |REQ-03                                        |
+  |----|----------------------------------------------|
+  |**Nome**    | Rivedere funzionalità "Download file documentazione" |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+
+
+  |ID  |REQ-04                                        |
+  |----|----------------------------------------------|
+  |**Nome**    | Rivedere lo schema DB |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |            |**Sotto requisiti** |
+  |**001**      | Rivedere la tabella "<b>teacher</b>"|
+  |**002**      | Introdurre il ruolo "<b>responsabile</b>"|
+
+
+  |ID  |REQ-05                                        |
+  |----|----------------------------------------------|
+  |**Nome**    | Aggiungere Funzionalità "richiedere nuova password", al utente registrato |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |**Note**    | Un utente registrato deve avere la possibilità di richiedere una nuova password |
+  |            |**Sotto requisiti** |
+  |**001**      | Cotruzione dell'iterfaccia sul sito|
+  |**002**      | Implementazione della funzionalità|
+
+  |ID  |REQ-06                                       |
+  |----|----------------------------------------------|
+  |**Nome**    | Funzionalità Responsabile |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |**Note**    | Un utente di tipo reponsabile deve avere diverse funzionalià che solo lui possiede, tra cui: <br style="line-height: 30px;"> <ul> <li>aggiungere progetti</li> <li>modificare i suoi progetti già esistenti</li> </ul>|
+  |            |**Sotto requisiti** |
+  |**001**      | Aggiungere la funzione al responsabile,che solo lui può aggiungere un progetti.|
+  |**002**      | Implementazione della funzionalità|
+
+
+  |ID  |REQ-07                                        |
+  |----|----------------------------------------------|
+  |**Nome**    | Funzionalità ricerca all'interno di documenti pdf|
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |**Note**    | Deve esistere la possibilità di cercare della parole o pezzi di testo all'interno dei documenti pdf del progetto. |
+
+  |ID  |REQ-08                                     |
+  |----|----------------------------------------------|
+  |**Nome**    | Funzionalità Amministratore |
+  |**Priorità**|1                     |
+  |**Versione**|1.0                   |
+  |**Note**    | Un utente di tipo amministratore deve avere diverse funzionalià  che solo lui possiede, tra cui: <br style="line-height: 30px;"> <ul> <li>Possibilità di modificare i permessi</li> <li>Abilitazione/Disabilitazione</li> <li>Possibilità di modificare i dati dell'utente</li></ul>|
+  |            |**Sotto requisiti** |
+  |**001**      | Possibilità di modificare i permessi |
+  |**002**      | Possibilità di Abilitazione/Disabilitazione |
+  |**003**      | Possibilità di modificare i dati dell'utente |
 
 ### Pianificazione
 
@@ -149,83 +205,50 @@ Dopo svolgiamo uno alla volta la pianificazione e poi l'implementazione di ogni 
 
 ### Analisi dei mezzi
 
-Elencare e *descrivere* i mezzi disponibili per la realizzazione del
-progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
-modello di riferimento.
+#### Software
 
-SDK, librerie, tools utilizzati per la realizzazione del progetto e
-eventuali dipendenze.
+I software presenti sui nostri PC:
+- Atom 1.34.0
+- Microsoft Project
 
-Su quale piattaforma dovrà essere eseguito il prodotto? Che hardware
-particolare è coinvolto nel progetto? Che particolarità e limitazioni
-presenta? Che hw sarà disponibile durante lo sviluppo?
+#### Hardware
+
+- Apple MacBook Pro 15" 2018, Processore Intel&reg; Core I7, RAM 16GB, Disk 512GB SSD, Mac OS X 10.14.3
+- Acer Aspire V Nitro, Intel&reg; Core I7, RAM 16GB, SSD 256GB e HDD 2TB,Windows 10 Home 64 bit
 
 ## Progettazione
 
-Questo capitolo descrive esaustivamente come deve essere realizzato il
-prodotto fin nei suoi dettagli. Una buona progettazione permette
-all’esecutore di evitare fraintendimenti e imprecisioni
-nell’implementazione del prodotto.
-
 ### Design dell’architettura del sistema
-
-Descrive:
-
--   La struttura del programma/sistema lo schema di rete...
-
--   Gli oggetti/moduli/componenti che lo compongono.
-
--   I flussi di informazione in ingresso ed in uscita e le
-    relative elaborazioni. Può utilizzare *diagrammi di flusso dei
-    dati* (DFD).
-
--   Eventuale sitemap
 
 ### Design dei dati e database
 
-Basandosi sul <b>REQ-02</b> aggiungere la colonna <b>link-repo"</b> alla tabella "project".
-
-project(<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id int(11),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title varchar(40),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description varchar(200),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final_vote int(11),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;progress int(11),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comment longtext,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id_responsible int(11),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doc_path varchar(260),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>link_repo text</b><br>
-)
-
 ### Schema E-R, schema logico e descrizione.
 
-Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
-versione, mentre le vecchie saranno sui diari.
+#### REQ-2
+Aggiungere la colonna <b>link-repo"</b> alla tabella già esistente "project".
+La nuova colonna sarà di tipo testo.
+
+project(<br>
+&emsp;id int(11),<br>
+&emsp;title varchar(40),<br>
+&emsp;description varchar(200),<br>
+&emsp;final_vote int(11),<br>
+&emsp;progress int(11),<br>
+&emsp;comment longtext,<br>
+&emsp;id_responsible int(11),<br>
+&emsp;doc_path varchar(260),<br>
+&emsp;<b>link_repo text</b><br>
+)
 
 ### Design delle interfacce
 
-Descrizione delle interfacce interne ed esterne del sistema e
-dell’interfaccia utente. La progettazione delle interfacce è basata
-sulle informazioni ricavate durante la fase di analisi e realizzata
-tramite mockups.
+#### REQ-02
+
+Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presenti deve essere visualizzato anche un capo dove poter inserire il link della repository del progetto stesso.
+
+<img src="../img/DesignInterfaces/design_link_repository.svg" alt="link_repo" border="5">
 
 ### Design procedurale
-
-Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
-ad esempio:
-
--   Diagrammi di flusso e Nassi.
-
--   Tabelle.
-
--   Classi e metodi.
-
--   Tabelle di routing
-
--   Diritti di accesso a condivisioni …
-
-Questi documenti permetteranno di rappresentare i dettagli procedurali
-per la realizzazione del prodotto.
 
 ## Implementazione
 

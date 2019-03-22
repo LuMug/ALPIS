@@ -66,7 +66,7 @@
   - <b>Data di inizio: </b>2019.02.13
 
   - <b>Data di fine: </b>2019.05.17
-  
+
 ### Abstract
 
   E’ una breve e accurata rappresentazione dei contenuti di un documento,
@@ -219,6 +219,8 @@ I software presenti sui nostri PC:
 ## Progettazione
 
 ### Design dell’architettura del sistema
+
+<img src="../img/Amministratore.jpg" alt="link_repo" border="5">
 
 ### Design dei dati e database
 

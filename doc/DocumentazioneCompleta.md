@@ -66,7 +66,7 @@
   - <b>Data di inizio: </b>2019.02.13
 
   - <b>Data di fine: </b>2019.05.17
-  
+
 ### Abstract
 
   E’ una breve e accurata rappresentazione dei contenuti di un documento,
@@ -219,6 +219,10 @@ I software presenti sui nostri PC:
 ## Progettazione
 
 ### Design dell’architettura del sistema
+
+Quando il l'amministratore effettua il login, devono essere visualizzati tutti i dati degli utenti (Allievi e Docenti). Oltre ai dati bisogna essere presente un campo per eliminare l'utente, una colonna per modificare i dati di esso e una colonna che specifica se l'utente è abilitato o disabilitato. La colonna che serve per eliminare un utente avrà presente una "x" per ogni riga ed essa eliminerà l'utente. La colonna che serve per modificare un utente avrà presente "modifica" per ogni riga e questo permetterà di modificare i dati dell'utente. La colonna "Granted" e "Abilita/disabilita" saranno delle select così che venga scelta unôpzione tra quelle a disposizione. 
+
+<img src="../img/Amministratore.jpg" alt="link_repo" border="5">
 
 ### Design dei dati e database
 

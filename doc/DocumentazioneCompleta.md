@@ -220,7 +220,7 @@ I software presenti sui nostri PC:
 
 ### Design dell’architettura del sistema
 
-<img src="../img/Amministratore.jpg" alt="link_repo" border="5">
+<img src="../img/Amministratore.jpg" /*alt="link_repo" border="5"*/>
 
 ### Design dei dati e database
 

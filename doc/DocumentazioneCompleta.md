@@ -247,6 +247,7 @@
 ---
 
 <br>
+
 ### Pianificazione
 
 Appena iniziato il progetto mettiamo giù la pianificazione, per sapere come sarà svolto il progetto e subito dopo tutte le analisi sul progetto.

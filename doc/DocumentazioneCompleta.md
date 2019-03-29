@@ -6,7 +6,9 @@
 
   - [Scopo](#scopo)
 
-1. [Analisi](#analisi)
+<br>
+
+2. [Analisi](#analisi)
 
   - [Analisi del dominio](#analisi-del-dominio)
 
@@ -18,33 +20,44 @@
 
   - [Pianificazione](#pianificazione)
 
-1. [Progettazione](#progettazione)
+<br>
+
+3. [Progettazione](#progettazione)
 
   - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 
   - [Design dei dati e database](#design-dei-dati-e-database)
 
-1. [Implementazione](#implementazione)
+<br>
+4. [Implementazione](#implementazione)
 
-1. [Test](#test)
+<br>
+5. [Test](#test)
 
   - [Protocollo di test](#protocollo-di-test)
 
   - [Risultati test](#risultati-test)
 
   - [Mancanze/limitazioni conosciute](#mancanze/limitazioni-conosciute)
+<br>
 
-1. [Consuntivo](#consuntivo)
+6. [Consuntivo](#consuntivo)
 
-1. [Conclusioni](#conclusioni)
+<br>
+
+7. [Conclusioni](#conclusioni)
 
   - [Sviluppi futuri](#sviluppi-futuri)
 
   - [Considerazioni personali](#considerazioni-personali)
 
-1. [Sitografia](#sitografia)
+<br>
 
-1. [Allegati](#allegati)
+8. [Sitografia](#sitografia)
+
+<br>
+
+9. [Allegati](#allegati)
 
 
 ## Introduzione
@@ -116,6 +129,8 @@
 
 ### Analisi e specifica dei requisiti
 
+---
+
 #### REQ-01
 
   |ID  |REQ-01                                        |
@@ -129,6 +144,7 @@
   |**002**      | Il sito permette di consultare i documenti elettronici dei progetti|
   |**003**      | Grazie ai campi si dovranno visualizzare i progetti in base alla ricerca.  |
 
+---
 
 #### REQ-02
 
@@ -143,6 +159,7 @@
   |**002**      | Nella sezione dove si può aggiunge un nuovo progetto, aggiungere all'iterfaccia poter aggiungere il link della repository del progetto|
   |**003**      | Aggiungere la funzinalità sul sito |
 
+---
 
 #### REQ-03
 
@@ -152,6 +169,7 @@
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
 
+---
 
 #### REQ-04
 
@@ -164,6 +182,7 @@
   |**001**      | Rivedere la tabella "<b>teacher</b>"|
   |**002**      | Introdurre il ruolo "<b>responsabile</b>"|
 
+---
 
 #### REQ-05
 
@@ -177,6 +196,8 @@
   |**001**      | Cotruzione dell'iterfaccia sul sito|
   |**002**      | Implementazione della funzionalità|
 
+---
+
 #### REQ-06
 
   |ID  |REQ-06                                       |
@@ -189,6 +210,7 @@
   |**001**      | Aggiungere la funzione al responsabile,che solo lui può aggiungere un progetti.|
   |**002**      | Implementazione della funzionalità|
 
+---
 
 #### REQ-07
 
@@ -198,6 +220,8 @@
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
   |**Note**    | Deve esistere la possibilità di cercare della parole o pezzi di testo all'interno dei documenti pdf del progetto. |
+
+---
 
 #### REQ-08
 
@@ -211,6 +235,8 @@
   |**001**      | Possibilità di modificare i permessi |
   |**002**      | Possibilità di Abilitazione/Disabilitazione |
   |**003**      | Possibilità di modificare i dati dell'utente |
+
+---
 
 ### Pianificazione
 
@@ -244,6 +270,8 @@ I software presenti sui nostri PC:
 
 ### Schema E-R, schema logico e descrizione.
 
+---
+
 #### [REQ-02](#req-02) | Link repository
 
 Aggiungere la colonna <b>link-repo"</b> alla tabella già esistente "project".
@@ -261,16 +289,15 @@ project(<br>
 &emsp;<b>link_repo text</b><br>
 )
 
-
+---
 
 ### Design delle interfacce
 
+---
 
 #### [REQ-02](#req-02) | Link repository
 
 Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presenti deve essere visualizzato anche un capo dove poter inserire il link della repository del progetto stesso.
-
----
 
 <img src="../design/DesignInterfaces/LinkRepository/linkRepositoryDesgn.svg" alt="link_repo" border="5" with=700 height=500>
 
@@ -279,8 +306,6 @@ Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presen
 #### [REQ-08](#req-08) | Funzionalità amministratore
 
 Quando il l'amministratore effettua il login, devono essere visualizzati tutti i dati degli utenti (Allievi e Docenti). Oltre ai dati bisogna essere presente un campo per eliminare l'utente, una colonna per modificare i dati di esso e una colonna che specifica se l'utente è abilitato o disabilitato. La colonna che serve per eliminare un utente avrà presente una "x" per ogni riga ed essa eliminerà l'utente. La colonna che serve per modificare un utente avrà presente "modifica" per ogni riga e questo permetterà di modificare i dati dell'utente. La colonna "Granted" e "Abilita/disabilita" saranno delle select così che venga scelta unôpzione tra quelle a disposizione.
-
----
 
 <p align="center">
 <img src="../design/DesignInterfaces/FunzionalitaAmministratore/funzionalitaAmministratore.jpg" alt="link_repo" border="5">

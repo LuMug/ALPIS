@@ -217,7 +217,11 @@
 Appena iniziato il progetto mettiamo giù la pianificazione, per sapere come sarà svolto il progetto e subito dopo tutte le analisi sul progetto.
 Dopo svolgiamo uno alla volta la pianificazione e poi l'implementazione di ogni modulo, testando pure il loro funzionamento individuale e tutti insieme all'interno del sito.
 
+---
+
 <img src="Scheduling/Gantt.png" alt="Gantt" border="5">
+
+---
 
 ### Analisi dei mezzi
 
@@ -257,21 +261,32 @@ project(<br>
 &emsp;<b>link_repo text</b><br>
 )
 
+
+
 ### Design delle interfacce
+
 
 #### [REQ-02](#req-02) | Link repository
 
 Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presenti deve essere visualizzato anche un capo dove poter inserire il link della repository del progetto stesso.
 
+---
+
 <img src="../design/DesignInterfaces/LinkRepository/linkRepositoryDesgn.svg" alt="link_repo" border="5" with=700 height=500>
+
+---
 
 #### [REQ-08](#req-08) | Funzionalità amministratore
 
 Quando il l'amministratore effettua il login, devono essere visualizzati tutti i dati degli utenti (Allievi e Docenti). Oltre ai dati bisogna essere presente un campo per eliminare l'utente, una colonna per modificare i dati di esso e una colonna che specifica se l'utente è abilitato o disabilitato. La colonna che serve per eliminare un utente avrà presente una "x" per ogni riga ed essa eliminerà l'utente. La colonna che serve per modificare un utente avrà presente "modifica" per ogni riga e questo permetterà di modificare i dati dell'utente. La colonna "Granted" e "Abilita/disabilita" saranno delle select così che venga scelta unôpzione tra quelle a disposizione.
 
+---
+
 <p align="center">
 <img src="../design/DesignInterfaces/FunzionalitaAmministratore/funzionalitaAmministratore.jpg" alt="link_repo" border="5">
 </p>
+
+---
 
 ### Design procedurale
 

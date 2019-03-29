@@ -6,7 +6,6 @@
 
   - [Scopo](#scopo)
 
-<br>
 
 2. [Analisi](#analisi)
 
@@ -20,7 +19,6 @@
 
   - [Pianificazione](#pianificazione)
 
-<br>
 
 3. [Progettazione](#progettazione)
 
@@ -28,11 +26,9 @@
 
   - [Design dei dati e database](#design-dei-dati-e-database)
 
-<br>
 
 4. [Implementazione](#implementazione)
 
-<br>
 
 5. [Test](#test)
 
@@ -42,11 +38,9 @@
 
   - [Mancanze/limitazioni conosciute](#mancanze/limitazioni-conosciute)
 
-<br>
 
 6. [Consuntivo](#consuntivo)
 
-<br>
 
 7. [Conclusioni](#conclusioni)
 
@@ -54,18 +48,18 @@
 
   - [Considerazioni personali](#considerazioni-personali)
 
-<br>
 
 8. [Sitografia](#sitografia)
 
-<br>
 
 9. [Allegati](#allegati)
 
 <br>
+
 ## Introduzione
 
 <br>
+
 ### Informazioni sul progetto
 
   - <b>Titolo Progetto: </b>Sito per la consultazione di progetti passati
@@ -85,6 +79,7 @@
   - <b>Data di fine: </b>2019.05.17
 
 <br>
+
 ### Abstract
 
   E’ una breve e accurata rappresentazione dei contenuti di un documento,
@@ -125,17 +120,21 @@
   > design such a large-scale microprocessor in just weeks.*
 
 <br>
+
 ### Scopo
 
   Migliorare il sito web già esistente, che permette di aggiungere e consultare i progetti creati nei vari anni scolastici
 
 <br>
+
 ## Analisi
 
 <br>
+
 ### Analisi del dominio
 
 <br>
+
 ### Analisi e specifica dei requisiti
 
 ---
@@ -260,7 +259,10 @@ Dopo svolgiamo uno alla volta la pianificazione e poi l'implementazione di ogni 
 ---
 
 <br>
+
 ### Analisi dei mezzi
+
+<br>
 
 #### Software
 
@@ -269,21 +271,26 @@ I software presenti sui nostri PC:
 - Microsoft Project
 
 <br>
+
 #### Hardware
 
 - Apple MacBook Pro 15" 2018, Processore Intel&reg; Core I7, RAM 16GB, Disk 512GB SSD, Mac OS X 10.14.3
 - Acer Aspire V Nitro, Intel&reg; Core I7, RAM 16GB, SSD 256GB e HDD 2TB,Windows 10 Home 64 bit
 
 <br>
+
 ## Progettazione
 
 <br>
+
 ### Design dell’architettura del sistema
 
 <br>
+
 ### Design dei dati e database
 
 <br>
+
 ### Schema E-R, schema logico e descrizione.
 
 ---
@@ -308,6 +315,7 @@ project(<br>
 ---
 
 <br>
+
 ### Design delle interfacce
 
 ---
@@ -330,41 +338,53 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 
 ---
 <br>
+
 ### Design procedurale
 
 <br>
+
 ## Implementazione
 
 <br>
+
 ## Test
 
 <br>
+
 ### Protocollo di test
 
 <br>
+
 ### Risultati test
 
 <br>
+
 ### Mancanze/limitazioni conosciute
 
 <br>
+
 ## Consuntivo
 
 <br>
+
 ## Conclusioni
 
 <br>
+
 ### Sviluppi futuri
 
 <br>
+
 ### Considerazioni personali
 
 
 <br>
+
 ### Sitografia
 
 
 <br>
+
 ## Allegati
 
 -   Diari di lavoro

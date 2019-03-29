@@ -329,6 +329,16 @@ Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presen
 
 ---
 
+#### [REQ-07](#req-07) | Ricerca all'interno di pdf
+
+Quando si vuole cercare, deve esserci la possibilità di cercare all'interno dei pdf dei progetti, la ricerca nei PDF sarà solo fatta se è stato messo il check su "Cerca nei pdf",
+una volta fatta la ricerca verrà visualizzata una tabella dove coparirà i documenti dove sono state trovate delle occorrenze, il loro numero e il progetto a cui appartine il documento.
+
+
+<img src="../design/DesignInterfaces/RicercaInPDF/ricercaInPDF.png" alt="ri-pdf" border="5" width=70% height=80%>
+
+---
+
 #### [REQ-08](#req-08) | Funzionalità amministratore
 
 Quando il l'amministratore effettua il login, devono essere visualizzati tutti i dati degli utenti (Allievi e Docenti). Oltre ai dati bisogna essere presente un campo per eliminare l'utente, una colonna per modificare i dati di esso e una colonna che specifica se l'utente è abilitato o disabilitato. La colonna che serve per eliminare un utente avrà presente una "x" per ogni riga ed essa eliminerà l'utente. La colonna che serve per modificare un utente avrà presente "modifica" per ogni riga e questo permetterà di modificare i dati dell'utente. La colonna "Granted" e "Abilita/disabilita" saranno delle select così che venga scelta unôpzione tra quelle a disposizione.

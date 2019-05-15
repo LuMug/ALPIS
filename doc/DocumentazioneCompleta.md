@@ -376,14 +376,14 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |**Risultati attesi**      | L'utente riesce a fare l'accesso e vedere tutti i progetti memorizzati nel Database. |
 #### TC-002
 
-    |Test Case  |TC-002                                     |
-    |----|----------------------------------------------|
-    |**Riferimento**    |  REQ-002|
-    |**Nome**    | Funzionamento dell'associazione di un link di una repository |
-    |**Descrizione**| Viene controllato in specifico la possibilità di associare un link di un repository all'aggiunta di un progetto .  |
-    |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
-    |**Procedura**   | Aggiungere un nuovo progetto e inserire tutti i dati, il link  di un repository in specifico.|
-    |**Risultati attesi**      | L'utente riesce ad aggiungere il progetto con il link di un repository. |
+  |Test Case  |TC-002                                     |
+  |----|----------------------------------------------|
+  |**Riferimento**    |  REQ-002|
+  |**Nome**    | Funzionamento dell'associazione di un link di una repository |
+  |**Descrizione**| Viene controllato in specifico la possibilità di associare un link di un repository all'aggiunta di un progetto .  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Procedura**   | Aggiungere un nuovo progetto e inserire tutti i dati, il link  di un repository in specifico.|
+  |**Risultati attesi**      | L'utente riesce ad aggiungere il progetto con il link di un repository. |
 
 
 ### Risultati test

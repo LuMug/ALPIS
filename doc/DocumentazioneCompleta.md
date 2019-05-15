@@ -364,7 +364,7 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 
 ### Protocollo di test
 
-#### REQ-01
+#### TC-001
 
   |Test Case  |TC-001                                     |
   |----|----------------------------------------------|
@@ -372,8 +372,19 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |**Nome**    | Funzionamento generale |
   |**Descrizione**| Viene controllato in modo generale il sito web.  |
   |**Prerequisiti**| Deve essere possibile accedere al sito web |
-  |**Procedura**   | Come prima cosa entrare nel sito web, fare il login e una volta fatto apparirà la pagina Home, nella quale sono presenti i vari progetti. </li></ul>|
+  |**Procedura**   | Come prima cosa entrare nel sito web, fare il login e una volta fatto apparirà la pagina Home, nella quale sono presenti i vari progetti.|
   |**Risultati attesi**      | L'utente riesce a fare l'accesso e vedere tutti i progetti memorizzati nel Database. |
+#### TC-002
+
+    |Test Case  |TC-002                                     |
+    |----|----------------------------------------------|
+    |**Riferimento**    |  REQ-002|
+    |**Nome**    | Funzionamento dell'associazione di un link di una repository |
+    |**Descrizione**| Viene controllato in specifico la possibilità di associare un link di un repository all'aggiunta di un progetto .  |
+    |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+    |**Procedura**   | Aggiungere un nuovo progetto e inserire tutti i dati, il link  di un repository in specifico.|
+    |**Risultati attesi**      | L'utente riesce ad aggiungere il progetto con il link di un repository. |
+
 
 ### Risultati test
 

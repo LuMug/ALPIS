@@ -368,9 +368,9 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 
   |Test Case  |TC-001                                     |
   |----|----------------------------------------------|
-  |**Riferimento**    | Funzionalità Amministratore |
+  |**Riferimento**    |  REQ-001|
   |**Nome**    | REQ-001 |
-  |**Descrizione**|                     |
+  |**Descrizione**| Viene controllato in modo generale il sito web, viene controllato se sono presenti tutte le funzionalità, se è possibile consultare i codumenti dei progetti, se in base alla ricerca vengono visualizzati i progetti.                    |
   |**Prerequisiti**|1.0                   |
   |**Procedura**    | Un utente di tipo amministratore deve avere diverse funzionalià  che solo lui possiede, tra cui: <br style="line-height: 30px;"> <ul> <li>Possibilità di modificare i permessi</li> <li>Abilitazione/Disabilitazione</li> <li>Possibilità di modificare i dati dell'utente</li></ul>|
   |**Risultati attesi**      | Possibilità di modificare i dati dell'utente |

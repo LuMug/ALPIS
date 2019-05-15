@@ -397,6 +397,28 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |**Procedura**   | Cercare un progetto e provare a scaricare la documentazione.|
   |**Risultati attesi**      | L'utente riesce a scaricare il file della documentazione.|
 
+#### TC-005
+
+  |Test Case  |TC-005                                     |
+  |----|----------------------------------------------|
+  |**Riferimento** |  REQ-005|
+  |**Nome**    | Richiedere una nuova password |
+  |**Descrizione**| Viene controllata in specifico la possibilità di richiedere una nuova paswword per l'account.  |
+  |**Prerequisiti**| Bisogna sapere l'email associata all'account preso in considerazione |
+  |**Procedura**   | Entrare nel sito e al momento dell'accesso cliccare sul link "Password dimenticata?", il quale porta ad una pagina che a sua volta chiederà l'email per poter inviare un link che permetterà di cambiare la password. Una volta fatto entrare nel proprio account dell'email e cliccare sul link per il ripristo della password. Infine immettere due volte la password desiderata.|
+  |**Risultati attesi**      | L'utente riesce a cambiare la password e al momento del prossimo accesso la password sarà quella ripristinata.|  
+
+#### TC-005
+
+  |Test Case  |TC-006                                     |
+  |----|----------------------------------------------|
+  |**Riferimento** |  REQ-006|
+  |**Nome**    | Funzionalità responsabile |
+  |**Descrizione**| Viene controllata in specifico la funzionalità del responsabile che ha la possibilità di aggiungere e modificare i progetti.  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Procedura**   | Aggiungere un nuovo progetto inserendo tutti i dati. Una volta aggiunto il progetto provare a modificare.  |
+  |**Risultati attesi** | Il responsabile riesce ad aggiungere e poi modificare un progetto.|  
+
 ### Risultati test
 
 <br>

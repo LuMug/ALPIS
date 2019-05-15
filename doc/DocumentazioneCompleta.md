@@ -374,6 +374,7 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |**Prerequisiti**| Deve essere possibile accedere al sito web |
   |**Procedura**   | Come prima cosa entrare nel sito web, fare il login e una volta fatto apparirà la pagina Home, nella quale sono presenti i vari progetti.|
   |**Risultati attesi**      | L'utente riesce a fare l'accesso e vedere tutti i progetti memorizzati nel Database. |
+
 #### TC-002
 
   |Test Case  |TC-002                                     |
@@ -383,8 +384,18 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |**Descrizione**| Viene controllata in specifico la possibilità di associare un link di un repository all'aggiunta di un progetto .  |
   |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
   |**Procedura**   | Aggiungere un nuovo progetto e inserire tutti i dati, il link  di un repository in specifico.|
-  |**Risultati attesi**      | L'utente riesce ad aggiungere il progetto con il link di un repository. |
+  |**Risultati attesi**      | L'utente riesce ad aggiungere il progetto con il link di un repository e viene visualizzato nella pagina Home nella lista dei progetti.|
 
+#### TC-003
+
+  |Test Case  |TC-003                                     |
+  |----|----------------------------------------------|
+  |**Riferimento**    |  REQ-003|
+  |**Nome**    | Funzionamento del download della documentazione |
+  |**Descrizione**| Viene controllata in specifico la possibilità di scaricare sul proprio PC la documentazione di del rispettivo progetto  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Procedura**   | Cercare un progetto e provare a scaricare la documentazione.|
+  |**Risultati attesi**      | L'utente riesce a scaricare il file della documentazione.|
 
 ### Risultati test
 

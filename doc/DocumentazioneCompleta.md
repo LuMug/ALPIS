@@ -133,6 +133,9 @@
 
 ### Analisi del dominio
 
+    Il progetto consiste in un sito Web esistente che bisogna modificare e aggiungere le funzionalità richieste. Questo sito verrà utilizzato dai docenti e dagli allievi della scuola professionale di Trevano per gestire i progetti fatti durante il percorso scolastico.  
+
+
 <br>
 
 ### Analisi e specifica dei requisiti
@@ -350,9 +353,6 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 ---
 <br>
 
-### Design procedurale
-
-<br>
 
 ## Implementazione
 
@@ -364,7 +364,82 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 
 ### Protocollo di test
 
-<br>
+#### TC-001
+
+  |Test Case  |TC-001                                     |
+  |----|----------------------------------------------|
+  |**Riferimento**    |  REQ-001|
+  |**Nome**    | Funzionamento generale |
+  |**Descrizione**| Viene controllato in modo generale il sito web.  |
+  |**Prerequisiti**| Deve essere possibile accedere al sito web |
+  |**Procedura**   | Come prima cosa entrare nel sito web, fare il login e una volta fatto apparirà la pagina Home, nella quale sono presenti i vari progetti.|
+  |**Risultati attesi**      | L'utente riesce a fare l'accesso e vedere tutti i progetti memorizzati nel Database. |
+
+#### TC-002
+
+  |Test Case  |TC-002                                     |
+  |----|----------------------------------------------|
+  |**Riferimento**    |  REQ-002|
+  |**Nome**    | Funzionamento dell'associazione di un link di una repository |
+  |**Descrizione**| Viene controllata in specifico la possibilità di associare un link di un repository all'aggiunta di un progetto .  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Procedura**   | Aggiungere un nuovo progetto e inserire tutti i dati, il link  di un repository in specifico.|
+  |**Risultati attesi**      | L'utente riesce ad aggiungere il progetto con il link di un repository e viene visualizzato nella pagina Home nella lista dei progetti.|
+
+#### TC-003
+
+  |Test Case  |TC-003                                     |
+  |----|----------------------------------------------|
+  |**Riferimento**    |  REQ-003|
+  |**Nome**    | Funzionamento del download della documentazione |
+  |**Descrizione**| Viene controllata in specifico la possibilità di scaricare sul proprio PC la documentazione di del rispettivo progetto  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Procedura**   | Cercare un progetto e provare a scaricare la documentazione.|
+  |**Risultati attesi**      | L'utente riesce a scaricare il file della documentazione.|
+
+#### TC-005
+
+  |Test Case  |TC-005                                     |
+  |----|----------------------------------------------|
+  |**Riferimento** |  REQ-005|
+  |**Nome**    | Richiedere una nuova password |
+  |**Descrizione**| Viene controllata in specifico la possibilità di richiedere una nuova paswword per l'account.  |
+  |**Prerequisiti**| Bisogna sapere l'email associata all'account preso in considerazione |
+  |**Procedura**   | Entrare nel sito e al momento dell'accesso cliccare sul link "Password dimenticata?", il quale porta ad una pagina che a sua volta chiederà l'email per poter inviare un link che permetterà di cambiare la password. Una volta fatto entrare nel proprio account dell'email e cliccare sul link per il ripristo della password. Infine immettere due volte la password desiderata.|
+  |**Risultati attesi**      | L'utente riesce a cambiare la password e al momento del prossimo accesso la password sarà quella ripristinata.|  
+
+#### TC-006
+
+  |Test Case  |TC-006                                     |
+  |----|----------------------------------------------|
+  |**Riferimento** |  REQ-006|
+  |**Nome**    | Funzionalità responsabile |
+  |**Descrizione**| Viene controllata in specifico la funzionalità del responsabile che ha la possibilità di aggiungere e modificare i progetti.  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Procedura**   | Aggiungere un nuovo progetto inserendo tutti i dati. Una volta aggiunto il progetto provare a modificare.  |
+  |**Risultati attesi** | Il responsabile riesce ad aggiungere e poi modificare un progetto.|  
+
+#### TC-007
+
+  |Test Case  |TC-007                                     |
+  |----|----------------------------------------------|
+  |**Riferimento** |  REQ-007|
+  |**Nome**    | Funzionalità riguardo la ricerca all'interno di documenti pdf |
+  |**Descrizione**| Viene controllata in specifico la funzionalità della ricerca all'interno dei documenti in formato pdf.  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Procedura**   | Nella barra di ricerda dei progetti selezionare l'opzione pdf che farà la ricerca della parola inserita all'interno del file associato a quel progetto.  |
+  |**Risultati attesi** | L'utente riesce a trovare la parola desiderata (se presente) all'interno del file pdf.|  
+
+#### TC-008
+
+  |Test Case  |TC-008                                     |
+  |----|----------------------------------------------|
+  |**Riferimento** |  REQ-008|
+  |**Nome**    | Funzionalità Amministratore |
+  |**Descrizione**| Viene controllata in specifico la funzionalità amministratore che può modificare i permessi, i dati dell'utente e abilitare/disabilitare un utente.  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito e nel menu in alto a destra (se amministratore) cliccare sull'opzione Amministratore che porta alla pagina di amministrazione |
+  |**Procedura**   | Nella lista di utenti presenti nel database, scegliere un utente e cliccare sul bottone modifica, infine provare a modificare i dati e i permessi. Una volta fatta la modifica disabilitare/disabilitare un utente e poi provare ad elminarne uno. Per finire provare ad aggiungere un utente, magari con gli stessi dati dell'utente eliminato precedentemente per assicurarsi che nel database non ci sia più nulla a che fare con il veccio utente. |
+  |**Risultati attesi** | L'utente riesce ad aggiungere un nuovo utente, a modificare i permessi, ad abilitare/disabilitare e a modificare i dati.|
 
 ### Risultati test
 
@@ -383,19 +458,24 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <br>
 
 ### Sviluppi futuri
+    Il sito è già abbastanza completo ma si potrebbe gestire la
 
 <br>
 
 ### Considerazioni personali
-
+    Questo progetto è stato utile per applicare i concetti visti durante il nostro percorso scolastico e per rinfrescare i moduli fatti in precedenza. È interessante il fatto che vengono usati più linguaggi di programmazione diversi per raggiungere l'obiettivo e la combinazione degli stessi porta ad avere un sito come il nostro. Il tempo è quello più difficile da gestire, poiché nel caso ci sia un problema riscontrato, esso cambia tutta la pianificazione e magari può portare a non avere il prodotto finito per la data concordata.
 
 <br>
 
 ### Sitografia
 
+    <a href="https://www.w3schools.com/php7/default.asp">https://www.w3schools.com/php7/default.asp</a>
+    <a href="https://phppot.com/mysql/mysql-fetch-using-php/">https://phppot.com/mysql/mysql-fetch-using-php/</a>
+    <a href="https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/">https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/</a>
 
 <br>
 
 ## Allegati
 
 -   Diari di lavoro
+-   Quaderno dei compiti

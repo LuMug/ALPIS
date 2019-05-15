@@ -408,7 +408,7 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |**Procedura**   | Entrare nel sito e al momento dell'accesso cliccare sul link "Password dimenticata?", il quale porta ad una pagina che a sua volta chiederà l'email per poter inviare un link che permetterà di cambiare la password. Una volta fatto entrare nel proprio account dell'email e cliccare sul link per il ripristo della password. Infine immettere due volte la password desiderata.|
   |**Risultati attesi**      | L'utente riesce a cambiare la password e al momento del prossimo accesso la password sarà quella ripristinata.|  
 
-#### TC-005
+#### TC-006
 
   |Test Case  |TC-006                                     |
   |----|----------------------------------------------|
@@ -418,6 +418,28 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
   |**Procedura**   | Aggiungere un nuovo progetto inserendo tutti i dati. Una volta aggiunto il progetto provare a modificare.  |
   |**Risultati attesi** | Il responsabile riesce ad aggiungere e poi modificare un progetto.|  
+
+#### TC-007
+
+  |Test Case  |TC-007                                     |
+  |----|----------------------------------------------|
+  |**Riferimento** |  REQ-007|
+  |**Nome**    | Funzionalità riguardo la ricerca all'interno di documenti pdf |
+  |**Descrizione**| Viene controllata in specifico la funzionalità della ricerca all'interno dei documenti in formato pdf.  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Procedura**   | Nella barra di ricerda dei progetti selezionare l'opzione pdf che farà la ricerca della parola inserita all'interno del file associato a quel progetto.  |
+  |**Risultati attesi** | L'utente riesce a trovare la parola desiderata (se presente) all'interno del file pdf.|  
+
+#### TC-008
+
+  |Test Case  |TC-008                                     |
+  |----|----------------------------------------------|
+  |**Riferimento** |  REQ-008|
+  |**Nome**    | Funzionalità Amministratore |
+  |**Descrizione**| Viene controllata in specifico la funzionalità amministratore che può modificare i permessi, i dati dell'utente e abilitare/disabilitare un utente.  |
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito e nel menu in alto a destra (se amministratore) cliccare sull'opzione Amministratore che porta alla pagina di amministrazione |
+  |**Procedura**   | Nella lista di utenti presenti nel database, scegliere un utente e cliccare sul bottone modifica, infine provare a modificare i dati e i permessi. Una volta fatta la modifica disabilitare/disabilitare un utente e poi provare ad elminarne uno. Per finire provare ad aggiungere un utente, magari con gli stessi dati dell'utente eliminato precedentemente per assicurarsi che nel database non ci sia più nulla a che fare con il veccio utente. |
+  |**Risultati attesi** | L'utente riesce ad aggiungere un nuovo utente, a modificare i permessi, ad abilitare/disabilitare e a modificare i dati.|
 
 ### Risultati test
 

@@ -133,6 +133,9 @@
 
 ### Analisi del dominio
 
+    Il progetto consiste in un sito Web esistente che bisogna modificare e aggiungere le funzionalità richieste. Questo sito verrà utilizzato dai docenti e dagli allievi della scuola professionale di Trevano per gestire i progetti fatti durante il percorso scolastico.  
+
+
 <br>
 
 ### Analisi e specifica dei requisiti
@@ -350,9 +353,6 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 ---
 <br>
 
-### Design procedurale
-
-<br>
 
 ## Implementazione
 
@@ -364,7 +364,16 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 
 ### Protocollo di test
 
-<br>
+#### REQ-01
+
+  |Test Case  |TC-001                                     |
+  |----|----------------------------------------------|
+  |**Riferimento**    | Funzionalità Amministratore |
+  |**Nome**    | REQ-001 |
+  |**Descrizione**|                     |
+  |**Prerequisiti**|1.0                   |
+  |**Procedura**    | Un utente di tipo amministratore deve avere diverse funzionalià  che solo lui possiede, tra cui: <br style="line-height: 30px;"> <ul> <li>Possibilità di modificare i permessi</li> <li>Abilitazione/Disabilitazione</li> <li>Possibilità di modificare i dati dell'utente</li></ul>|
+  |**Risultati attesi**      | Possibilità di modificare i dati dell'utente |
 
 ### Risultati test
 
@@ -383,19 +392,24 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <br>
 
 ### Sviluppi futuri
+    Il sito è già abbastanza completo ma si potrebbe gestire la
 
 <br>
 
 ### Considerazioni personali
-
+    Questo progetto è stato utile per applicare i concetti visti durante il nostro percorso scolastico e per rinfrescare i moduli fatti in precedenza. È interessante il fatto che vengono usati più linguaggi di programmazione diversi per raggiungere l'obiettivo e la combinazione degli stessi porta ad avere un sito come il nostro. Il tempo è quello più difficile da gestire, poiché nel caso ci sia un problema riscontrato, esso cambia tutta la pianificazione e magari può portare a non avere il prodotto finito per la data concordata.
 
 <br>
 
 ### Sitografia
 
+    <a href="https://www.w3schools.com/php7/default.asp">https://www.w3schools.com/php7/default.asp</a>
+    <a href="https://phppot.com/mysql/mysql-fetch-using-php/">https://phppot.com/mysql/mysql-fetch-using-php/</a>
+    <a href="https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/">https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/</a>
 
 <br>
 
 ## Allegati
 
 -   Diari di lavoro
+-   Quaderno dei compiti

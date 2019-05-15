@@ -380,7 +380,7 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |----|----------------------------------------------|
   |**Riferimento**    |  REQ-002|
   |**Nome**    | Funzionamento dell'associazione di un link di una repository |
-  |**Descrizione**| Viene controllato in specifico la possibilità di associare un link di un repository all'aggiunta di un progetto .  |
+  |**Descrizione**| Viene controllata in specifico la possibilità di associare un link di un repository all'aggiunta di un progetto .  |
   |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
   |**Procedura**   | Aggiungere un nuovo progetto e inserire tutti i dati, il link  di un repository in specifico.|
   |**Risultati attesi**      | L'utente riesce ad aggiungere il progetto con il link di un repository. |

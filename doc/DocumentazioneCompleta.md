@@ -370,10 +370,10 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |----|----------------------------------------------|
   |**Riferimento**    |  REQ-001|
   |**Nome**    | Funzionamento generale |
-  |**Descrizione**| Viene controllato in modo generale il sito web, viene controllato se sono presenti tutte le funzionalità, se è possibile consultare i documenti dei progetti, se in base alla ricerca vengono visualizzati i progetti.                    |
+  |**Descrizione**| Viene controllato in modo generale il sito web.  |
   |**Prerequisiti**| Deve essere possibile accedere al sito web |
   |**Procedura**   | Come prima cosa entrare nel sito web, fare il login e una volta fatto apparirà la pagina Home, nella quale sono presenti i vari progetti. </li></ul>|
-  |**Risultati attesi**      | L'utente riesce a fare l'accesso e vedere tutti i progetti. |
+  |**Risultati attesi**      | L'utente riesce a fare l'accesso e vedere tutti i progetti memorizzati nel Database. |
 
 ### Risultati test
 

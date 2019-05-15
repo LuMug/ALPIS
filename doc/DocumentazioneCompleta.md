@@ -370,10 +370,10 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   |----|----------------------------------------------|
   |**Riferimento**    |  REQ-001|
   |**Nome**    | REQ-001 |
-  |**Descrizione**| Viene controllato in modo generale il sito web, viene controllato se sono presenti tutte le funzionalità, se è possibile consultare i codumenti dei progetti, se in base alla ricerca vengono visualizzati i progetti.                    |
-  |**Prerequisiti**|1.0                   |
-  |**Procedura**    | Un utente di tipo amministratore deve avere diverse funzionalià  che solo lui possiede, tra cui: <br style="line-height: 30px;"> <ul> <li>Possibilità di modificare i permessi</li> <li>Abilitazione/Disabilitazione</li> <li>Possibilità di modificare i dati dell'utente</li></ul>|
-  |**Risultati attesi**      | Possibilità di modificare i dati dell'utente |
+  |**Descrizione**| Viene controllato in modo generale il sito web, viene controllato se sono presenti tutte le funzionalità, se è possibile consultare i documenti dei progetti, se in base alla ricerca vengono visualizzati i progetti.                    |
+  |**Prerequisiti**| Deve essere possibili accedere al sito web |
+  |**Procedura**   | Come prima cosa entrare nel sito web, fare il login e una volta fatto apparirà la pagina Home, nella quale sono presenti i vari progetti. </li></ul>|
+  |**Risultati attesi**      | L'utente riesce a fare l'accesso e vedere tutti i progetti. |
 
 ### Risultati test
 

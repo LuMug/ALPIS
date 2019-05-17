@@ -239,7 +239,6 @@ I software presenti sui nostri PC:
 - Microsoft Project 16.0
 - FileZilla 3.37.4
 - Sublime Text 3
-- DbSchema 8.1.6
 
 <br>
 
@@ -254,8 +253,15 @@ I software presenti sui nostri PC:
 
 <br>
 
+### Design dell’architettura del sistema
+
+<br>
 
 ### Design dei dati e database
+
+<br>
+
+### Schema E-R, schema logico e descrizione.
 
 ---
 
@@ -294,9 +300,10 @@ Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presen
 
 #### [REQ-05](#req-05) | Aggiungere la funzionalità di ripristino della password
 
-Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presenti deve essere visualizzato anche un capo dove poter inserire il link della repository del progetto stesso.
-
-
+Quando un utente registrato vuole ripristinare la propria password può farlo schiaccciando il link "<b>Password dimenticata?</b>".<br>
+Una volta schiacciato il link portera ad una pagina, dove si potra inserire l'email dell'account di cui si vuole ripristinare la password, una volta inserita e schiacciato il bottone "<b>Invia</b>" verrà inviata una email con il link ad un altra pagina.<br>
+Con il link dell'email si aprira una pagina, dove si potrà inserire la nuova password con la sua conferma, e una volta inserite e schiaccciato il Bottone "<b>Ripristina</b>" la password sarà repristinata con la nuova se le due password risutano uguali.
+Sotto il bottone "<b>Invia</b>" e "<b>Ripristina</b>" si trova anche un link che porterà alla pagina di login.
 
 ---
 
@@ -326,7 +333,25 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 
 ---
 
-### [REQ-05](#req-05) | Link repository
+### [REQ-05](#req-05) | Aggiungere la funzionalità di ripristino della password
+Quando un utente vuole ripristinare la propria password deve fornire l'email dell suo account, e una volta che l'ha fatto riceverà un email con all interno un link, il quale deve portare ad una pagina che potrà essere solo visualizzata dal ricevitore.<br>
+Per fare questo nella pagina dove è stata inviata l'email è stato necessario inserire un codice nel link, il quale verra prima di tutto salvato nella sessione, e poi nella pagina successiva confrontato con quello presente nel link, se risultera non indentico non sarà possibile accedere alla pagina.
+
+<b>...</b> <br>
+<i>// random number for identificate the email of the password </i><br>
+$_SESSION['restoreCode'] = hash("sha256", mt_rand(0, 100000000000), false); <br>
+
+<i>// the message of the email </i><br>
+$msg = "Cliccare sul link presente in questa email per ripristinare la password<br>
+&emsp;&emsp;&emsp;&emsp;\n http://samtinfo.ch/lpiarch/ALPIS/changePassword.php?restoreCode="; <br>
+$msg = $msg.$_SESSION['restoreCode']; <br>
+
+<i>// send email</i> <br>
+mail($email,"ALPIS - Richiesta nuova password",$msg); <br>
+
+<i>//Insert the email of the user in the session </i><br>
+$_SESSION['email'] = $email; <br>
+<b>...</b>
 
 ---
 <br>
@@ -430,11 +455,7 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <br>
 
 ## Conclusioni
-<<<<<<< HEAD
   Il sito già prima era abbastanza completo e nel suo insieme offriva
-=======
-  Il sito già prima era abbastanza completo e nel suo insieme offriva lo scopo principale, vedere i progetti creati durante il percorso scolastico. Grazie a questo sviluppo sono state aggiunte altre funzionalità che hanno perfezionato il prodotto e hanno offerto nuove possibilità, come la gestione dei progetti e degli utenti.
->>>>>>> 5e301ac4b745ed6d08410919f2e2e15de0306405
 
 <br>
 
@@ -452,8 +473,6 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 ### Sitografia
   <a href="https://www.w3schools.com/php7/default.asp">https://www.w3schools.com/php7/default.asp</a>
   <a href="https://phppot.com/mysql/mysql-fetch-using-php/">https://phppot.com/mysql/mysql-fetch-using-php/</a>
-  <a href="https://www.w3schools.com/php7/default.asp">https://www.w3schools.com/php7/default.asp</a> <br>
-  <a href="https://phppot.com/mysql/mysql-fetch-using-php/">https://phppot.com/mysql/mysql-fetch-using-php</a>
   <a href="https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/">https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/</a>
 
 <br>

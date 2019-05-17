@@ -76,64 +76,28 @@
 
   - <b>Data di inizio: </b>2019.02.13
 
-  - <b>Data di fine: </b>2019.05.17
+  - <b>Data di fine: </b>2019.05.22
 
 <br>
 
 ### Abstract
 
-  E’ una breve e accurata rappresentazione dei contenuti di un documento,
-  senza notazioni critiche o valutazioni. Lo scopo di un abstract efficace
-  dovrebbe essere quello di far conoscere all’utente il contenuto di base
-  di un documento e metterlo nella condizione di decidere se risponde ai
-  suoi interessi e se è opportuno il ricorso al documento originale.
-
-  Può contenere alcuni o tutti gli elementi seguenti:
-
-  -   **Background/Situazione iniziale**
-
-  -   **Descrizione del problema e motivazione**: Che problema ho cercato
-      di risolvere? Questa sezione dovrebbe includere l'importanza del
-      vostro lavoro, la difficoltà dell'area e l'effetto che potrebbe
-      avere se portato a termine con successo.
-
-  -   **Approccio/Metodi**: Come ho ottenuto dei progressi? Come ho
-      risolto il problema (tecniche…)? Quale è stata l’entità del mio
-      lavoro? Che fattori importanti controllo, ignoro o misuro?
-
-  -   **Risultati**: Quale è la risposta? Quali sono i risultati? Quanto è
-      più veloce, più sicuro, più economico o in qualche altro aspetto
-      migliore di altri prodotti/soluzioni?
-
-  Esempio di abstract:
-
-  > *As the size and complexity of today’s most modern computer chips
-  > increase, new techniques must be developed to effectively design and
-  > create Very Large Scale Integration chips quickly. For this project, a
-  > new type of hardware compiler is created. This hardware compiler will
-  > read a C++ program, and physically design a suitable microprocessor
-  > intended for running that specific program. With this new and powerful
-  > compiler, it is possible to design anything from a small adder, to a
-  > microprocessor with millions of transistors. Designing new computer
-  > chips, such as the Pentium 4, can require dozens of engineers and
-  > months of time. With the help of this compiler, a single person could
-  > design such a large-scale microprocessor in just weeks.*
+  This project consists in improving the existing website, which allows to add and manage the projects created in the various school years. We will need to complete a web application that allows us to consult the electronic documents of LPI projects. The fundamental functionality of this site is the research, which through various fields will have to visualize the projects inherent to what was sought.
 
 <br>
 
 ### Scopo
 
-  Migliorare il sito web già esistente, che permette di aggiungere e consultare i progetti creati nei vari anni scolastici
+  Lo scopo di questo progetto è migliorare il sito web già esistente, che permette di aggiungere e gestire i progetti creati nei vari anni scolastici. Bisognerà terminare un applicativo web che permetta di consultare i documenti
+  elettronici dei progetti LPI. La funzionalità fondamentale di questo sito è la ricerca, che tramite vari campi dovrà visualizzare i progetti inerenti a quanto si è cercato.
 
 <br>
 
 ## Analisi
-
 <br>
-
 ### Analisi del dominio
 
-    Il progetto consiste in un sito Web esistente che bisogna modificare e aggiungere le funzionalità richieste. Questo sito verrà utilizzato dai docenti e dagli allievi della scuola professionale di Trevano per gestire i progetti fatti durante il percorso scolastico.  
+  Il progetto consiste in un sito Web esistente che bisogna modificare e aggiungere le funzionalità richieste. Questo sito verrà utilizzato dai docenti e dagli allievi della scuola professionale di Trevano per gestire i progetti fatti durante il percorso scolastico.  
 
 
 <br>
@@ -253,8 +217,8 @@
 
 ### Pianificazione
 
-Appena iniziato il progetto mettiamo giù la pianificazione, per sapere come sarà svolto il progetto e subito dopo tutte le analisi sul progetto.
-Dopo svolgiamo uno alla volta la pianificazione e poi l'implementazione di ogni modulo, testando pure il loro funzionamento individuale e tutti insieme all'interno del sito.
+Appena iniziato il progetto viene fatta la pianificazione, per avere un'idea di come sarà svolto il progetto e a sua volta anche tutte le analisi sul progetto.
+Le attività vengono svolte una alla volta, partendo dalla pianificazione fino all'implementazione di ogni modulo. Per assicurarsi il successo bisogna testare il loro funzionamento individuale come anche quello di tutti i moduli messi insieme all'interno del sito.
 
 ---
 
@@ -272,7 +236,9 @@ Dopo svolgiamo uno alla volta la pianificazione e poi l'implementazione di ogni 
 
 I software presenti sui nostri PC:
 - Atom 1.34.0
-- Microsoft Project
+- Microsoft Project 16.0
+- FileZilla 3.37.4
+- Sublime Text 3
 
 <br>
 
@@ -301,20 +267,20 @@ I software presenti sui nostri PC:
 
 #### [REQ-02](#req-02) | Link repository
 
-Aggiungere la colonna <b>link-repo"</b> alla tabella già esistente "project".
-La nuova colonna sarà di tipo testo.
+  Aggiungere la colonna <b>link-repo"</b> alla tabella già esistente "project".
+  La nuova colonna sarà di tipo testo.
 
-project(<br>
-&emsp;id int(11),<br>
-&emsp;title varchar(40),<br>
-&emsp;description varchar(200),<br>
-&emsp;final_vote int(11),<br>
-&emsp;progress int(11),<br>
-&emsp;comment longtext,<br>
-&emsp;id_responsible int(11),<br>
-&emsp;doc_path varchar(260),<br>
-&emsp;<b>link_repo text</b><br>
-)
+  project(<br>
+    &emsp;id int(11),<br>
+    &emsp;title varchar(40),<br>
+    &emsp;description varchar(200),<br>
+    &emsp;final_vote int(11),<br>
+    &emsp;progress int(11),<br>
+    &emsp;comment longtext,<br>
+    &emsp;id_responsible int(11),<br>
+    &emsp;doc_path varchar(260),<br>
+    &emsp;<b>link_repo text</b><br>
+  )
 
 ---
 
@@ -454,24 +420,25 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <br>
 
 ## Conclusioni
+  Il sito già prima era abbastanza completo e nel suo insieme offriva 
 
 <br>
 
 ### Sviluppi futuri
-    Il sito è già abbastanza completo ma si potrebbe gestire la
+
+  Il sito è già abbastanza completo ma si potrebbe gestire la
 
 <br>
 
 ### Considerazioni personali
-    Questo progetto è stato utile per applicare i concetti visti durante il nostro percorso scolastico e per rinfrescare i moduli fatti in precedenza. È interessante il fatto che vengono usati più linguaggi di programmazione diversi per raggiungere l'obiettivo e la combinazione degli stessi porta ad avere un sito come il nostro. Il tempo è quello più difficile da gestire, poiché nel caso ci sia un problema riscontrato, esso cambia tutta la pianificazione e magari può portare a non avere il prodotto finito per la data concordata.
+  Questo progetto è stato utile per applicare i concetti visti durante il nostro percorso scolastico e per rinfrescare i moduli fatti in precedenza. È interessante il fatto che vengono usati più linguaggi di programmazione diversi per raggiungere l'obiettivo e la combinazione degli stessi porta ad avere un sito come il nostro. Il tempo è quello più difficile da gestire, poiché nel caso ci sia un problema riscontrato, esso cambia tutta la pianificazione e magari può portare a non avere il prodotto finito per la data concordata.
 
 <br>
 
 ### Sitografia
-
-    <a href="https://www.w3schools.com/php7/default.asp">https://www.w3schools.com/php7/default.asp</a>
-    <a href="https://phppot.com/mysql/mysql-fetch-using-php/">https://phppot.com/mysql/mysql-fetch-using-php/</a>
-    <a href="https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/">https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/</a>
+  <a href="https://www.w3schools.com/php7/default.asp">https://www.w3schools.com/php7/default.asp</a>
+  <a href="https://phppot.com/mysql/mysql-fetch-using-php/">https://phppot.com/mysql/mysql-fetch-using-php/</a>
+  <a href="https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/">https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/</a>
 
 <br>
 

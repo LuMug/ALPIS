@@ -110,7 +110,7 @@
 
   |ID  |REQ-01                                        |
   |----|----------------------------------------------|
-  |**Nome**    |Aggiungere funzionalità|
+  |**Nome**    | Aggiungere funzionalità sul sito web|
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
   |**Note**    |Aggiungere funzionalità al sito web gia creato precedentemente, per la consultazione di progetti passati |
@@ -125,10 +125,10 @@
 
   |ID  |REQ-02                                        |
   |----|----------------------------------------------|
-  |**Nome**    |Possibilità di associare un link di un repository all'aggiunta di un progetto|
+  |**Nome**    | Aggiungere campo per il link della repository |
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
-  |**Note**    |Quando si aggiunge un progetto, deve esistere la possibilità di aggiungere anche il link ad una possibile repository su git.|
+  |**Note**    |Quando si aggiunge un progetto, deve esistere la possibilità di aggiungere anche il link della repository.|
   |            |**Sotto requisiti** |
   |**001**      | Aggiunta alla tabella <b>project</b>, del database <b>efof_lpiarch2018</b>, la colonna "<b>link_repo</b>" |
   |**002**      | Nella sezione dove si può aggiunge un nuovo progetto, aggiungere all'iterfaccia poter aggiungere il link della repository del progetto|
@@ -140,7 +140,7 @@
 
   |ID  |REQ-03                                        |
   |----|----------------------------------------------|
-  |**Nome**    | Rivedere funzionalità "Download file documentazione" |
+  |**Nome**    | Rivedere funzionalità "Download file documentazione"|
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
 
@@ -163,10 +163,10 @@
 
   |ID  |REQ-05                                        |
   |----|----------------------------------------------|
-  |**Nome**    | Aggiungere Funzionalità "richiedere nuova password", al utente registrato |
+  |**Nome**    | Aggiungere la funzionalità di ripristino della password |
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
-  |**Note**    | Un utente registrato deve avere la possibilità di richiedere una nuova password |
+  |**Note**    | Un utente registrato deve avere la possibilità di ripristinare la propria password, fornendo l'email dell account. |
   |            |**Sotto requisiti** |
   |**001**      | Cotruzione dell'iterfaccia sul sito|
   |**002**      | Implementazione della funzionalità|
@@ -177,12 +177,12 @@
 
   |ID  |REQ-06                                       |
   |----|----------------------------------------------|
-  |**Nome**    | Funzionalità Responsabile |
+  |**Nome**    | Aggiungere le funzionalità Responsabile |
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
   |**Note**    | Un utente di tipo reponsabile deve avere diverse funzionalià che solo lui possiede, tra cui: <br style="line-height: 30px;"> <ul> <li>aggiungere progetti</li> <li>modificare i suoi progetti già esistenti</li> </ul>|
   |            |**Sotto requisiti** |
-  |**001**      | Aggiungere la funzione al responsabile,che solo lui può aggiungere un progetti.|
+  |**001**      | Aggiungere la funzione al responsabile, che solo lui può aggiungere un progetti.|
   |**002**      | Implementazione della funzionalità|
 
 ---
@@ -191,7 +191,7 @@
 
   |ID  |REQ-07                                        |
   |----|----------------------------------------------|
-  |**Nome**    | Funzionalità ricerca all'interno di documenti pdf|
+  |**Nome**    | Aggiungere la funzionalità di ricerca all'interno di documenti pdf|
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
   |**Note**    | Deve esistere la possibilità di cercare della parole o pezzi di testo all'interno dei documenti pdf del progetto. |
@@ -202,7 +202,7 @@
 
   |ID  |REQ-08                                     |
   |----|----------------------------------------------|
-  |**Nome**    | Funzionalità Amministratore |
+  |**Nome**    | Aggiungere le funzionalità Amministratore |
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
   |**Note**    | Un utente di tipo amministratore deve avere diverse funzionalià  che solo lui possiede, tra cui: <br style="line-height: 30px;"> <ul> <li>Possibilità di modificare i permessi</li> <li>Abilitazione/Disabilitazione</li> <li>Possibilità di modificare i dati dell'utente</li></ul>|
@@ -265,7 +265,7 @@ I software presenti sui nostri PC:
 
 ---
 
-#### [REQ-02](#req-02) | Link repository
+#### [REQ-02](#req-02) | Aggiungere campo per il link della repository
 
   Aggiungere la colonna <b>link-repo"</b> alla tabella già esistente "project".
   La nuova colonna sarà di tipo testo.
@@ -290,7 +290,7 @@ I software presenti sui nostri PC:
 
 ---
 
-#### [REQ-02](#req-02) | Link repository
+#### [REQ-02](#req-02) | Aggiungere campo per il link della repository
 
 Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presenti deve essere visualizzato anche un capo dove poter inserire il link della repository del progetto stesso.
 
@@ -298,7 +298,15 @@ Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presen
 
 ---
 
-#### [REQ-07](#req-07) | Ricerca all'interno di pdf
+#### [REQ-05](#req-05) | Aggiungere la funzionalità di ripristino della password
+
+Quando si vuole aggiungere un nuovo progetto, oltre agli altri campi già presenti deve essere visualizzato anche un capo dove poter inserire il link della repository del progetto stesso.
+
+
+
+---
+
+#### [REQ-07](#req-07) | Aggiungere la funzionalità di ricerca all'interno di documenti pdf
 
 Quando si vuole cercare, deve esserci la possibilità di cercare all'interno dei pdf dei progetti, la ricerca nei PDF sarà solo fatta se è stato messo il check su "Cerca nei pdf",
 una volta fatta la ricerca verrà visualizzata una tabella dove coparirà i documenti dove sono state trovate delle occorrenze, il loro numero e il progetto a cui appartine il documento.
@@ -308,7 +316,7 @@ una volta fatta la ricerca verrà visualizzata una tabella dove coparirà i docu
 
 ---
 
-#### [REQ-08](#req-08) | Funzionalità amministratore
+#### [REQ-08](#req-08) | Aggiungere le funzionalità Amministratore
 
 Quando il l'amministratore effettua il login, devono essere visualizzati tutti i dati degli utenti (Allievi e Docenti). Oltre ai dati bisogna essere presente un campo per eliminare l'utente, una colonna per modificare i dati di esso e una colonna che specifica se l'utente è abilitato o disabilitato. La colonna che serve per eliminare un utente avrà presente una "x" per ogni riga ed essa eliminerà l'utente. La colonna che serve per modificare un utente avrà presente "modifica" per ogni riga e questo permetterà di modificare i dati dell'utente. La colonna "Granted" e "Abilita/disabilita" saranno delle select così che venga scelta unôpzione tra quelle a disposizione.
 
@@ -316,17 +324,25 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <img src="../design/DesignInterfaces/FunzionalitaAmministratore/funzionalitaAmministratore.jpg" alt="link_repo" border="5">
 </p>
 
+
+<br>
+---
+
+## Implementazione
+
+---
+
+### [REQ-05](#req-05) | Link repository
+
 ---
 <br>
 
 
-## Implementazione
-
-<br>
-
 ## Test
 
+---
 <br>
+
 
 ### Protocollo di test
 
@@ -420,7 +436,7 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <br>
 
 ## Conclusioni
-  Il sito già prima era abbastanza completo e nel suo insieme offriva 
+  Il sito già prima era abbastanza completo e nel suo insieme offriva
 
 <br>
 

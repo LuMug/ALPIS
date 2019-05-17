@@ -256,7 +256,8 @@ I software presenti sui nostri PC:
 
 
 ### Design dei dati e database
-
+  Rispetto al database iniziale già esistente sono state aggiunte due colonne, una nella tabella "user" dove viene aggiunta una colonna "responsabile" di tipo booleano che definisce se quel utente è responsabile o meno. L'altra colonna si situa nella tabella "project" e si tratta della colonna "link_repo" di tipo testuale e rappresenta il lin di una repository di un progetto.
+  <img src="../img/Database.png">
 ---
 
 #### [REQ-02](#req-02) | Aggiungere campo per il link della repository

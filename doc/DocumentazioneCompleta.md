@@ -239,6 +239,7 @@ I software presenti sui nostri PC:
 - Microsoft Project 16.0
 - FileZilla 3.37.4
 - Sublime Text 3
+- DbSchema 8.1.6
 
 <br>
 
@@ -253,15 +254,8 @@ I software presenti sui nostri PC:
 
 <br>
 
-### Design dell’architettura del sistema
-
-<br>
 
 ### Design dei dati e database
-
-<br>
-
-### Schema E-R, schema logico e descrizione.
 
 ---
 
@@ -420,7 +414,7 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <br>
 
 ## Conclusioni
-  Il sito già prima era abbastanza completo e nel suo insieme offriva 
+  Il sito già prima era abbastanza completo e nel suo insieme offriva lo scopo principale, vedere i progetti creati durante il percorso scolastico. Grazie a questo sviluppo sono state aggiunte altre funzionalità che hanno perfezionato il prodotto e hanno offerto nuove possibilità, come la gestione dei progetti e degli utenti.
 
 <br>
 
@@ -436,8 +430,8 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <br>
 
 ### Sitografia
-  <a href="https://www.w3schools.com/php7/default.asp">https://www.w3schools.com/php7/default.asp</a>
-  <a href="https://phppot.com/mysql/mysql-fetch-using-php/">https://phppot.com/mysql/mysql-fetch-using-php/</a>
+  <a href="https://www.w3schools.com/php7/default.asp">https://www.w3schools.com/php7/default.asp</a> <br>
+  <a href="https://phppot.com/mysql/mysql-fetch-using-php/">https://phppot.com/mysql/mysql-fetch-using-php</a>
   <a href="https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/">https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/</a>
 
 <br>

@@ -267,11 +267,8 @@ I software presenti sui nostri PC:
   Rispetto al database iniziale già esistente sono state aggiunte due colonne, una nella tabella "user" dove viene aggiunta una colonna "responsabile" di tipo booleano che definisce se quel utente è responsabile o meno. L'altra colonna si situa nella tabella "project" e si tratta della colonna "link_repo" di tipo testuale e rappresenta il lin di una repository di un progetto.<br>
 
   <img src="../img/Database.png">
-
 ---
-
 #### [REQ-02](#req-02) | Aggiungere campo per il link della repository
-
   Aggiungere la colonna <b>link-repo"</b> alla tabella già esistente "project".
   La nuova colonna sarà di tipo testo.
 
@@ -286,14 +283,12 @@ I software presenti sui nostri PC:
     &emsp;doc_path varchar(260),<br>
     &emsp;<b>link_repo text</b><br>
   )
-
 ---
-
 <br>
-
 ### Design delle interfacce
 
 ---
+
 
 #### [REQ-02](#req-02) | Aggiungere campo per il link della repository
 
@@ -396,12 +391,23 @@ $_SESSION['email'] = $email; <br>
 
   |Test Case  |TC-003                                     |
   |----|----------------------------------------------|
-  |**Riferimento**    |  REQ-003|
-  |**Nome**    | Funzionamento del download della documentazione |
+  |**Riferimento**|  REQ-003|
+  |**Nome**| Funzionamento del download della documentazione |
   |**Descrizione**| Viene controllata in specifico la possibilità di scaricare sul proprio PC la documentazione di del rispettivo progetto  |
-  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
-  |**Procedura**   | Cercare un progetto e provare a scaricare la documentazione.|
-  |**Risultati attesi**      | L'utente riesce a scaricare il file della documentazione.|
+  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito. |
+  |**Procedura** | Cercare un progetto e provare a scaricare la documentazione.|
+  |**Risultati attesi**| L'utente riesce a scaricare il file della documentazione.|
+
+#### TC-004
+
+  |Test Case  |TC-004                                     |
+  |----|----------------------------------------------|
+    |**Riferimento**|  REQ-004 |
+    |**Nome**| Modifica schema DB. |
+    |**Descrizione**| Viene controllato se all'interno del database esiste nella tabella "user" la colonna "Responsabile". |
+    |**Prerequisiti**| Bisogna aver fatto l'accesso al Database con le rispettive credenziali. |
+    |**Procedura**| Come primo passaggio bisogna rispettare i prerequisiti poi bisogna controllare nella tabella "user" se è presente la colonna "responsabile" di tipo booleano.|
+    |**Risultati attesi**| All'utente risulta presente la colonna "responsabile". |
 
 #### TC-005
 
@@ -411,7 +417,7 @@ $_SESSION['email'] = $email; <br>
   |**Nome**    | Richiedere una nuova password |
   |**Descrizione**| Viene controllata in specifico la possibilità di richiedere una nuova paswword per l'account.  |
   |**Prerequisiti**| Bisogna sapere l'email associata all'account preso in considerazione |
-  |**Procedura**   | Entrare nel sito e al momento dell'accesso cliccare sul link "Password dimenticata?", il quale porta ad una pagina che a sua volta chiederà l'email per poter inviare un link che permetterà di cambiare la password. Una volta fatto entrare nel proprio account dell'email e cliccare sul link per il ripristo della password. Infine immettere due volte la password desiderata.|
+  |**Procedura** | Entrare nel sito e al momento dell'accesso cliccare sul link "Password dimenticata?", il quale porta ad una pagina che a sua volta chiederà l'email per poter inviare un link che permetterà di cambiare la password. Una volta fatto entrare nel proprio account dell'email e cliccare sul link per il ripristo della password. Infine immettere due volte la password desiderata.|
   |**Risultati attesi**      | L'utente riesce a cambiare la password e al momento del prossimo accesso la password sarà quella ripristinata.|  
 
 #### TC-006
@@ -451,6 +457,17 @@ $_SESSION['email'] = $email; <br>
 
 <br>
 
+  |Test Case  |Risultato|
+  |----|----------------------------------------------|
+  |**TC-001** | Il test è stato passato dopo che l'utente è riuscito a fare l'accesso |
+  |**TC-002** | Il test è stato passato dopo che l'utente è riuscito ad aggiungere il progetto con il link di un repository e viene visualizzato nella pagina Home nella lista dei progetti. |
+  |**TC-003** | Il test è stato passato dopo che l'utente è riuscito a scaricare il file della documentazione.|
+  |**TC-004** | Il test è stato passato dopo che all'utente risulta presente la colonna "responsabile". |
+  |**TC-005** | Il test è stato passato dopo che l'utente riesce a cambiare la password e al momento del prossimo accesso la password sarà quella ripristinata. |
+  |**TC-006** | Il test è stato passato dopo che il responsabile riesce ad aggiungere e poi modificare un progetto. |
+  |**TC-007** | Il test è stato passato dopo che l'utente riesce a trovare la parola desiderata (se presente) all'interno del file pdf.|
+  |**TC-008** | Il test è stato passato dopo che l'utente riesce ad aggiungere un nuovo utente, a modificare i permessi, ad abilitare/disabilitare e a modificare i dati. |
+
 ### Mancanze/limitazioni conosciute
 
 <br>
@@ -460,7 +477,7 @@ $_SESSION['email'] = $email; <br>
 <br>
 
 ## Conclusioni
-  Il sito già prima era abbastanza completo e nel suo insieme offriva
+  Il sito già prima era abbastanza completo e nel suo insieme offriva una visualizzazione dei progetti efficace ma questo sviluppo del sito ha permesso di avere molte più funzionalità che riguardano la gestione dell'utente e dei progetti, il che rende più facile il tutto e meno complicato. Con poco sforzo vengono fatte diverse funzioni (Es: modifica dei dati di un utente) invece di dover fare tutto a mano. 
 
 <br>
 

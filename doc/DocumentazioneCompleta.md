@@ -54,11 +54,11 @@
 
 9. [Allegati](#allegati)
 
+---
+<br>
 <br>
 
 ## Introduzione
-
-<br>
 
 ### Informazioni sul progetto
 
@@ -78,34 +78,37 @@
 
   - <b>Data di fine: </b>2019.05.22
 
+---
 <br>
 
 ### Abstract
-
+---
   This project consists in improving the existing website, which allows to add and manage the projects created in the various school years. We will need to complete a web application that allows us to consult the electronic documents of LPI projects. The fundamental functionality of this site is the research, which through various fields will have to visualize the projects inherent to what was sought.
 
+---
 <br>
 
 ### Scopo
-
+---
   Lo scopo di questo progetto è migliorare il sito web già esistente, che permette di aggiungere e gestire i progetti creati nei vari anni scolastici. Bisognerà terminare un applicativo web che permetta di consultare i documenti
   elettronici dei progetti LPI. La funzionalità fondamentale di questo sito è la ricerca, che tramite vari campi dovrà visualizzare i progetti inerenti a quanto si è cercato.
 
+---
+<br>
 <br>
 
 ## Analisi
-<br>
+
 ### Analisi del dominio
+---
 
-  Il progetto consiste in un sito Web esistente che bisogna modificare e aggiungere le funzionalità richieste. Questo sito verrà utilizzato dai docenti e dagli allievi della scuola professionale di Trevano per gestire i progetti fatti durante il percorso scolastico.  
+  Il progetto consiste in un sito Web esistente che bisogna modificare e aggiungere le funzionalità richieste. Questo sito verrà utilizzato dai docenti e dagli allievi della scuola professionale di Trevano per gestire i progetti fatti durante il percorso scolastico.
 
-
+---
 <br>
 
 ### Analisi e specifica dei requisiti
-
 ---
-
 #### REQ-01
 
   |ID  |REQ-01                                        |
@@ -230,40 +233,35 @@ Le attività vengono svolte una alla volta, partendo dalla pianificazione fino a
 
 ### Analisi dei mezzi
 
-<br>
-
 #### Software
+---
 
 I software presenti sui nostri PC:
 - Atom 1.34.0
 - Microsoft Project 16.0
 - FileZilla 3.37.4
 - Sublime Text 3
-
+---
 <br>
 
 #### Hardware
+---
 
 - Apple MacBook Pro 15" 2018, Processore Intel&reg; Core I7, RAM 16GB, Disk 512GB SSD, Mac OS X 10.14.3
 - Acer Aspire V Nitro, Intel&reg; Core I7, RAM 16GB, SSD 256GB e HDD 2TB,Windows 10 Home 64 bit
 
+---
+<br>
 <br>
 
 ## Progettazione
 
-<br>
-
-### Design dell’architettura del sistema
-
-<br>
-
 ### Design dei dati e database
-
+---
 <br>
 
 ### Schema E-R, schema logico e descrizione.
-
-
+---
   Rispetto al database iniziale già esistente sono state aggiunte due colonne, una nella tabella "user" dove viene aggiunta una colonna "responsabile" di tipo booleano che definisce se quel utente è responsabile o meno. L'altra colonna si situa nella tabella "project" e si tratta della colonna "link_repo" di tipo testuale e rappresenta il lin di una repository di un progetto.<br>
 
   <img src="../img/Database.png">
@@ -325,9 +323,9 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <img src="../design/DesignInterfaces/FunzionalitaAmministratore/funzionalitaAmministratore.jpg" alt="link_repo" border="5">
 </p>
 
-
-<br>
 ---
+<br>
+<br>
 
 ## Implementazione
 
@@ -355,15 +353,14 @@ $_SESSION['email'] = $email; <br>
 
 ---
 <br>
+<br>
 
 
 ## Test
 
----
-<br>
-
-
 ### Protocollo di test
+
+---
 
 #### TC-001
 
@@ -376,6 +373,8 @@ $_SESSION['email'] = $email; <br>
   |**Procedura**   | Come prima cosa entrare nel sito web, fare il login e una volta fatto apparirà la pagina Home, nella quale sono presenti i vari progetti.|
   |**Risultati attesi**      | L'utente riesce a fare l'accesso e vedere tutti i progetti memorizzati nel Database. |
 
+---
+
 #### TC-002
 
   |Test Case  |TC-002                                     |
@@ -386,6 +385,8 @@ $_SESSION['email'] = $email; <br>
   |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
   |**Procedura**   | Aggiungere un nuovo progetto e inserire tutti i dati, il link  di un repository in specifico.|
   |**Risultati attesi**      | L'utente riesce ad aggiungere il progetto con il link di un repository e viene visualizzato nella pagina Home nella lista dei progetti.|
+
+---
 
 #### TC-003
 
@@ -409,6 +410,8 @@ $_SESSION['email'] = $email; <br>
     |**Procedura**| Come primo passaggio bisogna rispettare i prerequisiti poi bisogna controllare nella tabella "user" se è presente la colonna "responsabile" di tipo booleano.|
     |**Risultati attesi**| All'utente risulta presente la colonna "responsabile". |
 
+---
+
 #### TC-005
 
   |Test Case  |TC-005                                     |
@@ -419,6 +422,8 @@ $_SESSION['email'] = $email; <br>
   |**Prerequisiti**| Bisogna sapere l'email associata all'account preso in considerazione |
   |**Procedura** | Entrare nel sito e al momento dell'accesso cliccare sul link "Password dimenticata?", il quale porta ad una pagina che a sua volta chiederà l'email per poter inviare un link che permetterà di cambiare la password. Una volta fatto entrare nel proprio account dell'email e cliccare sul link per il ripristo della password. Infine immettere due volte la password desiderata.|
   |**Risultati attesi**      | L'utente riesce a cambiare la password e al momento del prossimo accesso la password sarà quella ripristinata.|  
+
+---
 
 #### TC-006
 
@@ -431,6 +436,8 @@ $_SESSION['email'] = $email; <br>
   |**Procedura**   | Aggiungere un nuovo progetto inserendo tutti i dati. Una volta aggiunto il progetto provare a modificare.  |
   |**Risultati attesi** | Il responsabile riesce ad aggiungere e poi modificare un progetto.|  
 
+---
+
 #### TC-007
 
   |Test Case  |TC-007                                     |
@@ -442,6 +449,8 @@ $_SESSION['email'] = $email; <br>
   |**Procedura**   | Nella barra di ricerda dei progetti selezionare l'opzione pdf che farà la ricerca della parola inserita all'interno del file associato a quel progetto.  |
   |**Risultati attesi** | L'utente riesce a trovare la parola desiderata (se presente) all'interno del file pdf.|  
 
+---
+
 #### TC-008
 
   |Test Case  |TC-008                                     |
@@ -452,9 +461,14 @@ $_SESSION['email'] = $email; <br>
   |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito e nel menu in alto a destra (se amministratore) cliccare sull'opzione Amministratore che porta alla pagina di amministrazione |
   |**Procedura**   | Nella lista di utenti presenti nel database, scegliere un utente e cliccare sul bottone modifica, infine provare a modificare i dati e i permessi. Una volta fatta la modifica disabilitare/disabilitare un utente e poi provare ad elminarne uno. Per finire provare ad aggiungere un utente, magari con gli stessi dati dell'utente eliminato precedentemente per assicurarsi che nel database non ci sia più nulla a che fare con il veccio utente. |
   |**Risultati attesi** | L'utente riesce ad aggiungere un nuovo utente, a modificare i permessi, ad abilitare/disabilitare e a modificare i dati.|
+---
+<br>
 
 ### Risultati test
 
+
+
+---
 <br>
 
   |Test Case  |Risultato|
@@ -470,36 +484,50 @@ $_SESSION['email'] = $email; <br>
 
 ### Mancanze/limitazioni conosciute
 
+
+
+---
 <br>
 
 ## Consuntivo
 
+
+
+---
 <br>
 
 ## Conclusioni
   Il sito già prima era abbastanza completo e nel suo insieme offriva una visualizzazione dei progetti efficace ma questo sviluppo del sito ha permesso di avere molte più funzionalità che riguardano la gestione dell'utente e dei progetti, il che rende più facile il tutto e meno complicato. Con poco sforzo vengono fatte diverse funzioni (Es: modifica dei dati di un utente) invece di dover fare tutto a mano. 
 
+---
 <br>
 
 ### Sviluppi futuri
+---
 
   Il sito è già abbastanza completo ma si potrebbe gestire la
 
+---
 <br>
 
 ### Considerazioni personali
+---
   Questo progetto è stato utile per applicare i concetti visti durante il nostro percorso scolastico e per rinfrescare i moduli fatti in precedenza. È interessante il fatto che vengono usati più linguaggi di programmazione diversi per raggiungere l'obiettivo e la combinazione degli stessi porta ad avere un sito come il nostro. Il tempo è quello più difficile da gestire, poiché nel caso ci sia un problema riscontrato, esso cambia tutta la pianificazione e magari può portare a non avere il prodotto finito per la data concordata.
 
+---
 <br>
 
 ### Sitografia
+---
   <a href="https://www.w3schools.com/php7/default.asp">https://www.w3schools.com/php7/default.asp</a>
   <a href="https://phppot.com/mysql/mysql-fetch-using-php/">https://phppot.com/mysql/mysql-fetch-using-php/</a>
   <a href="https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/">https://forum.mrwebmaster.it/threads/modifica-dati-in-tabella-php-sql.33614/</a>
 
+---
 <br>
 
 ## Allegati
-
+---
 -   Diari di lavoro
 -   Quaderno dei compiti
+---

@@ -267,7 +267,7 @@ I software presenti sui nostri PC:
   <img src="../img/Database.png">
 ---
 #### [REQ-02](#req-02) | Aggiungere campo per il link della repository
-  Aggiungere la colonna <b>link-repo"</b> alla tabella già esistente "project".
+  Aggiungere la colonna <b>"link-repo"</b> alla tabella già esistente "project".
   La nuova colonna sarà di tipo testo.
 
   project(<br>
@@ -281,7 +281,28 @@ I software presenti sui nostri PC:
     &emsp;doc_path varchar(260),<br>
     &emsp;<b>link_repo text</b><br>
   )
+
 ---
+
+#### [REQ-4](#req-04) | Rivedere lo schema DB
+  Aggiungere la colonna <b>"id_teacher_responsible"</b> alla tabella già esistente "project", questa nuova colonna servirà a definere quale è l'insegnate che è responsabile di questo progetto, invece <b>"id_responsible"</b> diventa l'id dell'utente responsabile del progetto.
+  Abbiamo stabilito che la tabella <b>"teacher"</b> è utile perchè permette di risparmiare dello spazio, quindi abbiamo deciso di tenerla e di aggiungerne un altra.
+
+  project(<br>
+    &emsp;id int(11),<br>
+    &emsp;title varchar(40),<br>
+    &emsp;description varchar(200),<br>
+    &emsp;final_vote int(11),<br>
+    &emsp;progress int(11),<br>
+    &emsp;comment longtext,<br>
+    &emsp;<b>id_responsible int(11)</b>,<br>
+    &emsp;<b>id_teacher_responsible int(11)</b>,<br>
+    &emsp;doc_path varchar(260),<br>
+    &emsp;link_repo text<br>
+  )
+
+---
+
 <br>
 ### Design delle interfacce
 
@@ -491,6 +512,11 @@ $_SESSION['email'] = $email; <br>
 
 ## Consuntivo
 
+Durante l'esecuzione del progetto la data di consegna è stata posticipata, quindi abbiamo avuto 2 giorni in più da dedicarci. La pianificazione è stata eseguita approssimativamente, perche come ultima cosa abbiamo implementato le funzionalità del Responsabile e abbiamo avuto diversi ritardi durante l'implementazione e anche un po` all'inizio per comprendere al meglio i requisiti.
+
+---
+
+<img src="Scheduling/GanttConsuntivo.png" alt="GanttConsuntivo" border="5">
 
 
 ---
@@ -505,7 +531,8 @@ $_SESSION['email'] = $email; <br>
 ### Sviluppi futuri
 ---
 
-  Il sito è già abbastanza completo ma si potrebbe gestire la
+  Il sito è già abbastanza completo, ma comunque si potrebbero ancora aggiungere diverse funzionalità, come ad esempio una ricerca più completa che può essere effettuata su diversi tipi di file o su parti precise di un progetto.
+  L'interfaccia è molto semplice e minimale, comunque manca una navigazione semplice e veloce tra le sezioni di una pagina o fra pagine.
 
 ---
 <br>

@@ -402,18 +402,18 @@ $result1 = $conn->query($query1);<br>
 Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo:
 ```html
 
-<i>while($row1 = $result->fetch_array(MYSQLI_ASSOC)){<br>
-<tr>
-<td>$row1['id']</td><br>
-<td>$row1['name']</td><br>
-<td>$row1['surname']</td><br>
-<td>$row1['granted']</td><br>
-<td>$row1['username']</td><br>
-<td>$row1['password']</td><br>
-<td>$row1['email']</td><br>
-</tr>
+while($row1 = $result->fetch_array(MYSQLI_ASSOC)){
+  <tr>
+    <td>$row1['id']</td><br>
+    <td>$row1['name']</td><br>
+    <td>$row1['surname']</td><br>
+    <td>$row1['granted']</td><br>
+    <td>$row1['username']</td><br>
+    <td>$row1['password']</td><br>
+    <td>$row1['email']</td><br>
+  </tr>
 }
-</i><br>
+
 ```
     Ora bisogna inserire anche la funzionalità che elimina e che modifica i dati come colonna presente in ogni riga (per ogni utente): <br>
 

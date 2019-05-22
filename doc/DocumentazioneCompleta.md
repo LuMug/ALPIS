@@ -389,11 +389,28 @@ $1_SESSION['email'] = $email; <br>
   Come primo passaggio bisogna creare una pagina con estensione <i> php </i>, in questo caso <i> "amministratore.php" </i>. Nella nuova pagina creata come primo passaggio bisogna ritornare i valori di tutti gli utenti presenti nel Database. In una tabella sono presenti gli allievi e nell'altra i docenti. Per ritornare i valori dal database bisogna creare una <i> query </i>che lo faccia, mostrata di seguito:
 
   <b>Per gli allievi: </b><br>
-    $query = "Select * from user where not id IN (Select id from teacher)";
-    $result = $conn->query($query);
+    $query = "Select * from user where not id IN (Select id from teacher)";<br>
+    $result = $conn->query($query);<br>
   <b>Per i docenti: </b><br>
-    $query1 = "Select * from user where id IN (Select id from teacher)";
-    $result1 = $conn->query($query1);
+    $query1 = "Select * from user where id IN (Select id from teacher)";<br>
+    $result1 = $conn->query($query1);<br>
+
+  Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo: <br>
+    <?php while($row1 = $result->fetch_array(MYSQLI_ASSOC)){?><br>
+      <tr><br>
+        <td><?php echo $row1['id'] ?></td><br>
+        <td><?php echo $row1['name']?></td><br>
+        <td><?php echo $row1['surname']?></td><br>
+        <td><?php echo $row1['granted']?></td><br>
+        <td><?php echo $row1['username']?></td><br>
+        <td><?php echo $row1['password']?></td><br>
+        <td><?php echo $row1['email']?></td><br>
+      </tr>
+
+
+
+
+
 
 
 

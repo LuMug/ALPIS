@@ -408,14 +408,27 @@ $1_SESSION['email'] = $email; <br>
       </tr>
     }
     </i><br>
-    <p>
-    Ora bisogna inserire anche la funzionalità come colonna presente in ogni riga (per ogni utente):<br>
-    <br>
-    <td>
-  		 <?php echo "<a href = 'cancellaUtente.php?userID=" . $row1['id'] . "'>X</a>";?>
-  	</td>
 
-</p>
+    Ora bisogna inserire anche la funzionalità come colonna presente in ogni riga (per ogni utente): <br>
+
+    <p><td>
+  		<?php echo "<a href = 'cancellaUtente.php?userID=" . $row1['id'] . "'>X</a>";?>
+  	</td></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br>
 
 

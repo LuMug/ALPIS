@@ -382,7 +382,7 @@ $_SESSION['email'] = $email; <br>
 
 ```
 <br>
-### [REQ-08](#req-08) | Aggiungere le funzionalità Amministratore <br>
+###[REQ-08](#req-08) | Aggiungere le funzionalità Amministratore <br>
   L'amministratore è colui che può gestire tutto ciò che riguarda gli utenti e i loro permessi. Si occupa di gestire i dati di un utente, di creare utenti nuovi nel caso ci sia il bisogno.
   <br>
   Come primo passaggio bisogna creare una pagina con estensione <i> php </i>, in questo caso <i> "amministratore.php" </i>. Nella nuova pagina creata come primo passaggio bisogna ritornare i valori di tutti gli utenti presenti nel Database. In una tabella sono presenti gli allievi e nell'altra i docenti. Per ritornare i valori dal database bisogna creare una <i> query </i>che lo faccia, mostrata di seguito:

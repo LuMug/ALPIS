@@ -368,18 +368,18 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <b>...</b> <br>
 <i>// random number for identificate the email of the password </i><br>
 
-$1_SESSION['restoreCode']"" = hash("sha256", mt_rand(0, 100000000000), false); <br>
+$_SESSION['restoreCode']"" = hash("sha256", mt_rand(0, 100000000000), false); <br>
 
 <i>// the message of the email </i><br>
 $msg = "Cliccare sul link presente in questa email per ripristinare la password<br>
 &emsp;&emsp;&emsp;&emsp;\n http://samtinfo.ch/lpiarch/ALPIS/changePassword.php?restoreCode="; <br>
-$msg = $msg.$1_SESSION['restoreCode']; <br>
+$msg = $msg.$_SESSION['restoreCode']; <br>
 
 <i>// send email</i> <br>
 mail($email,"ALPIS - Richiesta nuova password",$msg); <br>
 
 <i>//Insert the email of the user in the session </i><br>
-$1_SESSION['email'] = $email; <br>
+$_SESSION['email'] = $email; <br>
 <b>...</b>
 
 ---

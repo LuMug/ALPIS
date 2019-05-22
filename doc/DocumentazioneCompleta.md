@@ -396,22 +396,24 @@ $result = $conn->query($query);
 
 <b>Per i docenti: </b><br>
 ```php
-&emsp;&emsp;$query1 = "Select * from user where id IN (Select id from teacher)";<br>
-&emsp;&emsp;$result1 = $conn->query($query1);<br>
+$query1 = "Select * from user where id IN (Select id from teacher)";<br>
+$result1 = $conn->query($query1);<br>
 ```
-Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo: <br>
+Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo:
+```html
+```php
 <i>while($row1 = $result->fetch_array(MYSQLI_ASSOC)){<br>
-      <tr>
-        &emsp;&emsp;<td>$row1['id']</td><br>
-        &emsp;&emsp;<td>$row1['name']</td><br>
-        &emsp;&emsp;<td>$row1['surname']</td><br>
-        &emsp;&emsp;<td>$row1['granted']</td><br>
-        &emsp;&emsp;<td>$row1['username']</td><br>
-        &emsp;&emsp;<td>$row1['password']</td><br>
-        &emsp;&emsp;<td>$row1['email']</td><br>
-      </tr>
-    }
-    </i><br>
+<tr>
+<td>$row1['id']</td><br>
+<td>$row1['name']</td><br>
+<td>$row1['surname']</td><br>
+<td>$row1['granted']</td><br>
+<td>$row1['username']</td><br>
+<td>$row1['password']</td><br>
+<td>$row1['email']</td><br>
+</tr>
+}
+</i><br>
 
     Ora bisogna inserire anche la funzionalità che elimina e che modifica i dati come colonna presente in ogni riga (per ogni utente): <br>
 

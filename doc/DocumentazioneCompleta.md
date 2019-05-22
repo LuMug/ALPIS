@@ -22,6 +22,7 @@
 
   - [Design dei dati e database](#design-dei-dati-e-database)
 
+  - [Design delle interfacce](#design-delle-interfacce)
 
 4. [Implementazione](#implementazione)
 

@@ -412,18 +412,18 @@ $_SESSION['email'] = $email; <br>
 
     Ora bisogna inserire anche la funzionalità che elimina e che modifica i dati come colonna presente in ogni riga (per ogni utente): <br>
 
-    <p><td>
+    <td>
   		<?php echo "<a href = 'cancellaUtente.php?userID=" . $row1['id'] . "'>X</a>";?>
   	</td></p>
     <br>
 
-    <p><td>
+    <td>
     <?php echo "<a href = 'modify/ModifyUser.php?userID=" . $row2['id'] . "'>Modifica</a>";?>
-    </td></p>
+    </td>
 
     L'ultima colonna è quella che definisce se l'untente è abilitato o disabilitato:
 
-    ```php
+    ```html
     <td>
       <select>
         <option value='true'>True</option>

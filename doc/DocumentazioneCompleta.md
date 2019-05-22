@@ -388,14 +388,14 @@ $_SESSION['email'] = $email;
   <br>
   Come primo passaggio bisogna creare una pagina con estensione <i> php </i>, in questo caso <i> "amministratore.php" </i>. Nella nuova pagina creata come primo passaggio bisogna ritornare i valori di tutti gli utenti presenti nel Database. In una tabella sono presenti gli allievi e nell'altra i docenti. Per ritornare i valori dal database bisogna creare una <i> query </i>che lo faccia, mostrata di seguito:
 
-  <b>Per gli allievi: </b><br>
+  <b>Per gli allievi: </b>
 
     ```php
 
         &emsp;&emsp; $query = "Select * from user where not id IN (Select id from teacher)";<br>
-    &emsp;&emsp;$result = $conn->query($query);<br>
+        &emsp;&emsp;$result = $conn->query($query);<br>
     ```
-    
+
   <b>Per i docenti: </b><br>
     ```php
     &emsp;&emsp;$query1 = "Select * from user where id IN (Select id from teacher)";<br>

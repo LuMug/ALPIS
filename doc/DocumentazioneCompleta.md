@@ -390,11 +390,14 @@ $_SESSION['email'] = $email;
 
   <b>Per gli allievi: </b><br>
     &emsp;&emsp;$query = "Select * from user where not id IN (Select id from teacher)";<br>
+    ```php
     &emsp;&emsp;$result = $conn->query($query);<br>
+    ```
   <b>Per i docenti: </b><br>
+    ```php
     &emsp;&emsp;$query1 = "Select * from user where id IN (Select id from teacher)";<br>
     &emsp;&emsp;$result1 = $conn->query($query1);<br>
-
+    ```
   Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo: <br>
     <i>while($row1 = $result->fetch_array(MYSQLI_ASSOC)){<br>
       <tr>

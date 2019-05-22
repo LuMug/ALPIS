@@ -364,10 +364,9 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 ### [REQ-05](#req-05) | Aggiungere la funzionalità di ripristino della password
   Quando un utente vuole ripristinare la propria password deve fornire l'email dell suo account, e una volta che l'ha fatto riceverà un email con all interno un link, il quale deve portare ad una pagina che potrà essere solo visualizzata dal ricevitore.<br>
   Per fare questo nella pagina dove è stata inviata l'email è stato necessario inserire un codice nel link, il quale verra prima di tutto salvato nella sessione, e poi nella pagina successiva confrontato con quello presente nel link, se risultera non indentico non sarà possibile accedere alla pagina.
-
- <br>
 <i>// random number for identificate the email of the password </i><br>
 ```php
+
 <br>
 $_SESSION['restoreCode']"" = hash("sha256", mt_rand(0, 100000000000), false); <br>
 

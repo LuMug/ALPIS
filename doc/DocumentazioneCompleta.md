@@ -367,7 +367,7 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 
 <b>...</b> <br>
 <i>// random number for identificate the email of the password </i><br>
-<pre>
+
 $_SESSION['restoreCode']"" = hash("sha256", mt_rand(0, 100000000000), false); <br>
 
 <i>// the message of the email </i><br>
@@ -381,7 +381,7 @@ mail($email,"ALPIS - Richiesta nuova password",$msg); <br>
 <i>//Insert the email of the user in the session </i><br>
 $_SESSION['email'] = $email; <br>
 <b>...</b>
-</pre>
+
 ---
 <br>
 ### [REQ-08](#req-08) | Aggiungere le funzionalità Amministratore <br>
@@ -390,11 +390,11 @@ $_SESSION['email'] = $email; <br>
   Come primo passaggio bisogna creare una pagina con estensione <i> php </i>, in questo caso <i> "amministratore.php" </i>. Nella nuova pagina creata come primo passaggio bisogna ritornare i valori di tutti gli utenti presenti nel Database. In una tabella sono presenti gli allievi e nell'altra i docenti. Per ritornare i valori dal database bisogna creare una <i> query </i>che lo faccia, mostrata di seguito:
 
   <b>Per gli allievi: </b><br>
-    $query = "Select * from user where not id IN (Select id from teacher)";<br>
-    $result = $conn->query($query);<br>
+    &emsp;&emsp;$query = "Select * from user where not id IN (Select id from teacher)";<br>
+    &emsp;&emsp;$result = $conn->query($query);<br>
   <b>Per i docenti: </b><br>
-    $query1 = "Select * from user where id IN (Select id from teacher)";<br>
-    $result1 = $conn->query($query1);<br>
+    &emsp;&emsp;$query1 = "Select * from user where id IN (Select id from teacher)";<br>
+    &emsp;&emsp;$result1 = $conn->query($query1);<br>
 
   Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo: <br>
     <i>while($row1 = $result->fetch_array(MYSQLI_ASSOC)){<br>

@@ -460,6 +460,7 @@ $querys = "DELETE FROM `user` WHERE `id` ='$userID'";
 
 //viene eseguita la query
 $conn->query($querys1);
+$conn->query($querys);
 
 /*Ritorna alla pagina precedente (amministratore.php)*/
 header("Location: ".$_SERVER['HTTP_REFERER']);
@@ -485,6 +486,7 @@ $querys = "DELETE FROM `user` WHERE `id` ='$userID'";
 
 //viene eseguita la query
 $conn->query($querys1);
+$conn->query($querys);
 
 /*Ritorna alla pagina precedente (amministratore.php)*/
 header("Location: ".$_SERVER['HTTP_REFERER']);

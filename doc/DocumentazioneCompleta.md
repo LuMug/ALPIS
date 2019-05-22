@@ -384,23 +384,23 @@ $_SESSION['email'] = $email;
 ---
 
 ### [REQ-08](#req-08) | Aggiungere le funzionalità Amministratore
-  L'amministratore è colui che può gestire tutto ciò che riguarda gli utenti e i loro permessi. Si occupa di gestire i dati di un utente, di creare utenti nuovi nel caso ci sia il bisogno.
-  <br>
-  Come primo passaggio bisogna creare una pagina con estensione <i> php </i>, in questo caso <i> "amministratore.php" </i>. Nella nuova pagina creata come primo passaggio bisogna ritornare i valori di tutti gli utenti presenti nel Database. In una tabella sono presenti gli allievi e nell'altra i docenti. Per ritornare i valori dal database bisogna creare una <i> query </i>che lo faccia, mostrata di seguito:
+L'amministratore è colui che può gestire tutto ciò che riguarda gli utenti e i loro permessi. Si occupa di gestire i dati di un utente, di creare utenti nuovi nel caso ci sia il bisogno.
+<br>
+Come primo passaggio bisogna creare una pagina con estensione <i> php </i>, in questo caso <i> "amministratore.php" </i>. Nella nuova pagina creata come primo passaggio bisogna ritornare i valori di tutti gli utenti presenti nel Database. In una tabella sono presenti gli allievi e nell'altra i docenti. Per ritornare i valori dal database bisogna creare una <i> query </i>che lo faccia, mostrata di seguito:
 
-  <b>Per gli allievi: </b>
-      ```php
-        $query = "Select * from user where not id IN (Select id from teacher)";
-        $result = $conn->query($query);
-        ```
+<b>Per gli allievi: </b>
+```php
+$query = "Select * from user where not id IN (Select id from teacher)";
+$result = $conn->query($query);
+```
 
-  <b>Per i docenti: </b><br>
-    ```php
-    &emsp;&emsp;$query1 = "Select * from user where id IN (Select id from teacher)";<br>
-    &emsp;&emsp;$result1 = $conn->query($query1);<br>
-    ```
-  Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo: <br>
-    <i>while($row1 = $result->fetch_array(MYSQLI_ASSOC)){<br>
+<b>Per i docenti: </b><br>
+```php
+&emsp;&emsp;$query1 = "Select * from user where id IN (Select id from teacher)";<br>
+&emsp;&emsp;$result1 = $conn->query($query1);<br>
+```
+Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo: <br>
+<i>while($row1 = $result->fetch_array(MYSQLI_ASSOC)){<br>
       <tr>
         &emsp;&emsp;<td>$row1['id']</td><br>
         &emsp;&emsp;<td>$row1['name']</td><br>

@@ -420,6 +420,16 @@ $1_SESSION['email'] = $email; <br>
     <?php echo "<a href = 'modify/ModifyUser.php?userID=" . $row2['id'] . "'>Modifica</a>";?>
     </td></p>
 
+    L'ultima colonna è quella che definisce se l'untente è abilitato o disabilitato:
+
+    <td>
+      <select>
+        <option value='true'>True</option>
+        <option value='false'>False</option>
+      </select>
+    </td>
+
+
 
 
 

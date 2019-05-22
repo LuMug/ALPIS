@@ -367,7 +367,6 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <i>// random number for identificate the email of the password </i><br>
 ```php
 
-<br>
 $_SESSION['restoreCode']"" = hash("sha256", mt_rand(0, 100000000000), false); <br>
 
 <i>// the message of the email </i><br>

@@ -365,9 +365,9 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
   Quando un utente vuole ripristinare la propria password deve fornire l'email dell suo account, e una volta che l'ha fatto riceverà un email con all interno un link, il quale deve portare ad una pagina che potrà essere solo visualizzata dal ricevitore.<br>
   Per fare questo nella pagina dove è stata inviata l'email è stato necessario inserire un codice nel link, il quale verra prima di tutto salvato nella sessione, e poi nella pagina successiva confrontato con quello presente nel link, se risultera non indentico non sarà possibile accedere alla pagina.
 
-<b>...</b> <br>
+ <br>
 <i>// random number for identificate the email of the password </i><br>
-
+```php
 $_SESSION['restoreCode']"" = hash("sha256", mt_rand(0, 100000000000), false); <br>
 
 <i>// the message of the email </i><br>
@@ -382,7 +382,7 @@ mail($email,"ALPIS - Richiesta nuova password",$msg); <br>
 $_SESSION['email'] = $email; <br>
 <b>...</b>
 
----
+```
 <br>
 ### [REQ-08](#req-08) | Aggiungere le funzionalità Amministratore <br>
   L'amministratore è colui che può gestire tutto ciò che riguarda gli utenti e i loro permessi. Si occupa di gestire i dati di un utente, di creare utenti nuovi nel caso ci sia il bisogno.

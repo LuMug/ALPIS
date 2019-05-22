@@ -500,12 +500,12 @@ $1_SESSION['email'] = $email; <br>
 
   |Test Case  |TC-004                                 |
   |----|----------------------------------------------|
-    |**Riferimento** |  REQ-004 |
-    |**Nome**| Modifica schema DB. |
-    |**Descrizione** | Viene controllato se all'interno del database esiste nella tabella "user" la colonna "Responsabile". |
-    |**Prerequisiti** | Bisogna aver fatto l'accesso al Database con le rispettive credenziali. |
-    |**Procedura** | Come primo passaggio bisogna rispettare i prerequisiti poi bisogna controllare nella tabella "user" se è presente la colonna "responsabile" di tipo booleano.|
-    |**Risultati attesi** | All'utente risulta presente la colonna "responsabile". |
+  |**Riferimento** |  REQ-004 |
+  |**Nome**| Modifica schema DB. |
+  |**Descrizione** | Viene controllato se all'interno del database esiste nella tabella "user" la colonna "Responsabile". |
+  |**Prerequisiti** | Bisogna aver fatto l'accesso al Database con le rispettive credenziali. |
+  |**Procedura** | Come primo passaggio bisogna rispettare i prerequisiti poi bisogna controllare nella tabella "user" se è presente la colonna "responsabile" di tipo booleano.|
+  |**Risultati attesi** | All'utente risulta presente la colonna "responsabile". |
 
 ---
 

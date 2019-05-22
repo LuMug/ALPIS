@@ -445,7 +445,7 @@ L'ultima colonna è quella che definisce se l'untente è abilitato o disabilitat
 </td>
 ```
 È presente anche l'aggiunta di un nuovo utente, l'utente cliccando il bottone presente sotto la tabella può creare un nuovo profilo di un allievo o di un docente.  
-
+#### Elimina
 La funzionalità che elimina un'utente riceve come parametro nell'url l'id dell'utente da eliminare. In base all'Id passato viene eseguita una query che elimina l'utente. Per eliminare un allievo prima bisogna eliminare l'id nella tabella "author" per poter eliminarlo anche dalla tabella "user". Invece per eliminare un docente bisogna eliminare l'id prima nella tabella "teacher" e poi nella tabella "user".
 
 <b>Per gli allievi: </b>
@@ -499,6 +499,7 @@ $conn->query($querys);
 header("Location: ".$_SERVER['HTTP_REFERER']);
 exit(0);
 ```
+#### Modifica
 La funzionalità che modifica i dati di un utente viene gestita tramite un form che ritorna i valori da inserire nel database nei rispettivi attributi. L'utente viene identificato con l'id che è stato salvato al momento che è stato scelto di fare la modifica. Siccome non viene modificato l'id di un utente non bisogna modificare altre tabelle se non solo quella denominata "user".
  Per effettuare la modifica viene fatta una query che inserisce i valori ricevuti dal form:
 
@@ -507,9 +508,8 @@ La funzionalità che modifica i dati di un utente viene gestita tramite un form 
 $query = "UPDATE `user` SET  name='$name', surname='$surname', granted='$granted', username='$username', password='$password', email='$email' WHERE `id`='$userID'";
 //viene eseguita la query
 $conn->query($query);
-
-
 ```
+
 
 
 

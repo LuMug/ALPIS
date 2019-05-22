@@ -396,7 +396,7 @@ $1_SESSION['email'] = $email; <br>
     $result1 = $conn->query($query1);<br>
 
   Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo: <br>
-    <i><?php while($row1 = $result->fetch_array(MYSQLI_ASSOC)){?><br>
+    <i>while($row1 = $result->fetch_array(MYSQLI_ASSOC)){<br>
       <tr><br>
         <td><?php echo $row1['id'] ?></td><br>
         <td><?php echo $row1['name']?></td><br>

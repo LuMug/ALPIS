@@ -399,13 +399,13 @@ $_SESSION['email'] = $email; <br>
   Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo: <br>
     <i>while($row1 = $result->fetch_array(MYSQLI_ASSOC)){<br>
       <tr>
-        <td>$row1['id']</td><br>
-        <td>$row1['name']</td><br>
-        <td>$row1['surname']</td><br>
-        <td>$row1['granted']</td><br>
-        <td>$row1['username']</td><br>
-        <td>$row1['password']</td><br>
-        <td>$row1['email']</td><br>
+        &emsp;&emsp;<td>$row1['id']</td><br>
+        &emsp;&emsp;<td>$row1['name']</td><br>
+        &emsp;&emsp;<td>$row1['surname']</td><br>
+        &emsp;&emsp;<td>$row1['granted']</td><br>
+        &emsp;&emsp;<td>$row1['username']</td><br>
+        &emsp;&emsp;<td>$row1['password']</td><br>
+        &emsp;&emsp;<td>$row1['email']</td><br>
       </tr>
     }
     </i><br>

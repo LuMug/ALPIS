@@ -710,7 +710,6 @@ Durante l'esecuzione del progetto la data di consegna è stata posticipata, quin
 
 ### Sviluppi futuri
 ---
-
   Il sito è già abbastanza completo, ma comunque si potrebbero ancora aggiungere diverse funzionalità, come ad esempio una ricerca più completa che può essere effettuata su diversi tipi di file o su parti precise di un progetto.
   L'interfaccia è molto semplice e minimale, comunque manca una navigazione semplice e veloce tra le sezioni di una pagina o fra pagine.
 

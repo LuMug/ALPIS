@@ -109,10 +109,10 @@
 
 ### Analisi dei costi e benefici
 ---
-|Categoria  |Costo|
-|----|----------------------------------------------|
-|Personale| totOre * 2 persone * 40 CHF/h |
-|**TOT**| **TOT CHF** |
+  |Categoria  |Costo|
+  |----|----------------------------------------------|
+  |Personale| totOre * 2 persone * 40 CHF/h |
+  |**TOT**| **TOT CHF** |
 ---
 <br>
 

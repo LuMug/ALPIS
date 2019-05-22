@@ -409,11 +409,19 @@ $1_SESSION['email'] = $email; <br>
     }
     </i><br>
 
-    Ora bisogna inserire anche la funzionalità come colonna presente in ogni riga (per ogni utente): <br>
+    Ora bisogna inserire anche la funzionalità che elimina e che modifica i dati come colonna presente in ogni riga (per ogni utente): <br>
 
     <p><td>
   		<?php echo "<a href = 'cancellaUtente.php?userID=" . $row1['id'] . "'>X</a>";?>
   	</td></p>
+    <br>
+
+    <p><td>
+    <?php echo "<a href = 'modify/ModifyUser.php?userID=" . $row2['id'] . "'>Modifica</a>";?>
+    </td></p>
+
+
+
 
 
 

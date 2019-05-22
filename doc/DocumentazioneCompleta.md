@@ -275,12 +275,15 @@ I software presenti sui nostri PC:
 
 ### Schema E-R, schema logico e descrizione.
 ---
+
   Rispetto al database iniziale già esistente sono state aggiunte due colonne, una nella tabella "user" dove viene aggiunta una colonna "responsabile" di tipo booleano che definisce se quel utente è responsabile o meno. L'altra colonna si situa nella tabella "project" e si tratta della colonna "link_repo" di tipo testuale e rappresenta il lin di una repository di un progetto.<br>
 
   <img src="../img/Database.png">
+
 ---
+
 #### [REQ-02](#req-02) | Aggiungere campo per il link della repository
-  Aggiungere la colonna <b>"link-repo"</b> alla tabella già esistente "project".
+  Aggiungere la colonna <b>"link-repo"</b> alla tabella già esistente "project".<br>
   La nuova colonna sarà di tipo testo.
 
 ```mysql
@@ -324,7 +327,6 @@ I software presenti sui nostri PC:
 ### Design delle interfacce
 
 ---
-
 
 #### [REQ-02](#req-02) | Aggiungere campo per il link della repository
 

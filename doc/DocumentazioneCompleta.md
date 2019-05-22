@@ -155,6 +155,7 @@
   |**Nome**    | Rivedere funzionalità "Download file documentazione"|
   |**Priorità**|1                     |
   |**Versione**|1.0                   |
+  |**001**      | Rivedere la funzionalità "Download file documentazione"|
 
 ---
 
@@ -486,25 +487,25 @@ $1_SESSION['email'] = $email; <br>
 
 #### TC-003
 
-  |Test Case  |TC-003                                     |
+  |Test Case  |TC-003                                 |
   |----|----------------------------------------------|
-  |**Riferimento**|  REQ-003|
-  |**Nome**| Funzionamento del download della documentazione |
-  |**Descrizione**| Viene controllata in specifico la possibilità di scaricare sul proprio PC la documentazione di del rispettivo progetto  |
-  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito. |
+  |**Riferimento** |  REQ-003|
+  |**Nome** | Funzionamento del download della documentazione |
+  |**Descrizione** | Viene controllata in specifico la possibilità di scaricare sul proprio PC la documentazione di del rispettivo progetto  |
+  |**Prerequisiti** | TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito. |
   |**Procedura** | Cercare un progetto e provare a scaricare la documentazione.|
-  |**Risultati attesi**| L'utente riesce a scaricare il file della documentazione.|
+  |**Risultati attesi** | L'utente riesce a scaricare il file della documentazione.|
 
 #### TC-004
 
-  |Test Case  |TC-004                                     |
+  |Test Case  |TC-004                                 |
   |----|----------------------------------------------|
-    |**Riferimento**|  REQ-004 |
+    |**Riferimento** |  REQ-004 |
     |**Nome**| Modifica schema DB. |
-    |**Descrizione**| Viene controllato se all'interno del database esiste nella tabella "user" la colonna "Responsabile". |
-    |**Prerequisiti**| Bisogna aver fatto l'accesso al Database con le rispettive credenziali. |
-    |**Procedura**| Come primo passaggio bisogna rispettare i prerequisiti poi bisogna controllare nella tabella "user" se è presente la colonna "responsabile" di tipo booleano.|
-    |**Risultati attesi**| All'utente risulta presente la colonna "responsabile". |
+    |**Descrizione** | Viene controllato se all'interno del database esiste nella tabella "user" la colonna "Responsabile". |
+    |**Prerequisiti** | Bisogna aver fatto l'accesso al Database con le rispettive credenziali. |
+    |**Procedura** | Come primo passaggio bisogna rispettare i prerequisiti poi bisogna controllare nella tabella "user" se è presente la colonna "responsabile" di tipo booleano.|
+    |**Risultati attesi** | All'utente risulta presente la colonna "responsabile". |
 
 ---
 
@@ -514,8 +515,8 @@ $1_SESSION['email'] = $email; <br>
   |----|----------------------------------------------|
   |**Riferimento** |  REQ-005|
   |**Nome**    | Richiedere una nuova password |
-  |**Descrizione**| Viene controllata in specifico la possibilità di richiedere una nuova paswword per l'account.  |
-  |**Prerequisiti**| Bisogna sapere l'email associata all'account preso in considerazione |
+  |**Descrizione** | Viene controllata in specifico la possibilità di richiedere una nuova paswword per l'account.  |
+  |**Prerequisiti** | Bisogna sapere l'email associata all'account preso in considerazione |
   |**Procedura** | Entrare nel sito e al momento dell'accesso cliccare sul link "Password dimenticata?", il quale porta ad una pagina che a sua volta chiederà l'email per poter inviare un link che permetterà di cambiare la password. Una volta fatto entrare nel proprio account dell'email e cliccare sul link per il ripristo della password. Infine immettere due volte la password desiderata.|
   |**Risultati attesi**      | L'utente riesce a cambiare la password e al momento del prossimo accesso la password sarà quella ripristinata.|  
 
@@ -527,8 +528,8 @@ $1_SESSION['email'] = $email; <br>
   |----|----------------------------------------------|
   |**Riferimento** |  REQ-006|
   |**Nome**    | Funzionalità responsabile |
-  |**Descrizione**| Viene controllata in specifico la funzionalità del responsabile che ha la possibilità di aggiungere e modificare i progetti.  |
-  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Descrizione** | Viene controllata in specifico la funzionalità del responsabile che ha la possibilità di aggiungere e modificare i progetti.  |
+  |**Prerequisiti** | TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
   |**Procedura**   | Aggiungere un nuovo progetto inserendo tutti i dati. Una volta aggiunto il progetto provare a modificare.  |
   |**Risultati attesi** | Il responsabile riesce ad aggiungere e poi modificare un progetto.|  
 
@@ -540,8 +541,8 @@ $1_SESSION['email'] = $email; <br>
   |----|----------------------------------------------|
   |**Riferimento** |  REQ-007|
   |**Nome**    | Funzionalità riguardo la ricerca all'interno di documenti pdf |
-  |**Descrizione**| Viene controllata in specifico la funzionalità della ricerca all'interno dei documenti in formato pdf.  |
-  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
+  |**Descrizione** | Viene controllata in specifico la funzionalità della ricerca all'interno dei documenti in formato pdf.  |
+  |**Prerequisiti** | TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito |
   |**Procedura**   | Nella barra di ricerda dei progetti selezionare l'opzione pdf che farà la ricerca della parola inserita all'interno del file associato a quel progetto.  |
   |**Risultati attesi** | L'utente riesce a trovare la parola desiderata (se presente) all'interno del file pdf.|  
 
@@ -553,17 +554,14 @@ $1_SESSION['email'] = $email; <br>
   |----|----------------------------------------------|
   |**Riferimento** |  REQ-008|
   |**Nome**    | Funzionalità Amministratore |
-  |**Descrizione**| Viene controllata in specifico la funzionalità amministratore che può modificare i permessi, i dati dell'utente e abilitare/disabilitare un utente.  |
-  |**Prerequisiti**| TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito e nel menu in alto a destra (se amministratore) cliccare sull'opzione Amministratore che porta alla pagina di amministrazione |
+  |**Descrizione** | Viene controllata in specifico la funzionalità amministratore che può modificare i permessi, i dati dell'utente e abilitare/disabilitare un utente.  |
+  |**Prerequisiti** | TC-001: bisogna aver fatto l'accesso con il proprio profilo al sito e nel menu in alto a destra (se amministratore) cliccare sull'opzione Amministratore che porta alla pagina di amministrazione |
   |**Procedura**   | Nella lista di utenti presenti nel database, scegliere un utente e cliccare sul bottone modifica, infine provare a modificare i dati e i permessi. Una volta fatta la modifica disabilitare/disabilitare un utente e poi provare ad elminarne uno. Per finire provare ad aggiungere un utente, magari con gli stessi dati dell'utente eliminato precedentemente per assicurarsi che nel database non ci sia più nulla a che fare con il veccio utente. |
   |**Risultati attesi** | L'utente riesce ad aggiungere un nuovo utente, a modificare i permessi, ad abilitare/disabilitare e a modificare i dati.|
 ---
 <br>
 
 ### Risultati test
-
-
-
 ---
 <br>
 
@@ -587,7 +585,7 @@ $1_SESSION['email'] = $email; <br>
 
 ## Consuntivo
 
-Durante l'esecuzione del progetto la data di consegna è stata posticipata, quindi abbiamo avuto 2 giorni in più da dedicarci. La pianificazione è stata eseguita approssimativamente, perche come ultima cosa abbiamo implementato le funzionalità del Responsabile e abbiamo avuto diversi ritardi durante l'implementazione e anche un po` all'inizio per comprendere al meglio i requisiti.
+Durante l'esecuzione del progetto la data di consegna è stata posticipata, quindi abbiamo avuto 2 giorni in più da dedicarci. La pianificazione è stata eseguita approssimativamente, perche come ultima cosa abbiamo implementato le funzionalità del Responsabile e abbiamo avuto diversi ritardi durante l'implementazione e anche un po' all'inizio per comprendere al meglio i requisiti.
 
 ---
 

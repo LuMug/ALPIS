@@ -415,29 +415,27 @@ while($row1 = $result->fetch_array(MYSQLI_ASSOC)){
 }
 
 ```
-    Ora bisogna inserire anche la funzionalità che elimina e che modifica i dati come colonna presente in ogni riga (per ogni utente): <br>
+Ora bisogna inserire anche la funzionalità che elimina e che modifica i dati come colonna presente in ogni riga (per ogni utente): <br>
 ```html
 <td>
   <?php echo "<a href = 'cancellaUtente.php?userID=" . $row1['id'] . "'>X</a>";?>
 </td>
 ```
-
-    <td>
-    <?php echo "<a href = 'modify/ModifyUser.php?userID=" . $row2['id'] . "'>Modifica</a>";?>
-    </td>
-
-    L'ultima colonna è quella che definisce se l'untente è abilitato o disabilitato:
-
-    ```html
-    <td>
-      <select>
-        <option value='true'>True</option>
-        <option value='false'>False</option>
-      </select>
-    </td>
-    ```
-
-    È presente anche l'aggiunta di un nuovo utente, l'utente cliccando il bottone presente sotto la tabella può creare un nuovo profilo di un allievo o di un docente.  
+```html
+<td>
+  <?php echo "<a href = 'modify/ModifyUser.php?userID=" . $row2['id'] . "'>Modifica</a>";?>
+</td>
+```
+L'ultima colonna è quella che definisce se l'untente è abilitato o disabilitato:
+```html
+<td>
+  <select>
+    <option value='true'>True</option>
+    <option value='false'>False</option>
+  </select>
+</td>
+```
+È presente anche l'aggiunta di un nuovo utente, l'utente cliccando il bottone presente sotto la tabella può creare un nuovo profilo di un allievo o di un docente.  
 
 
 

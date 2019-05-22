@@ -322,8 +322,8 @@ I software presenti sui nostri PC:
 ```
 
 ---
-
 <br>
+
 ### Design delle interfacce
 
 ---

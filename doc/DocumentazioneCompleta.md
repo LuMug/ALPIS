@@ -298,18 +298,20 @@ I software presenti sui nostri PC:
   Aggiungere la colonna <b>"id_teacher_responsible"</b> alla tabella già esistente "project", questa nuova colonna servirà a definere quale è l'insegnate che è responsabile di questo progetto, invece <b>"id_responsible"</b> diventa l'id dell'utente responsabile del progetto.
   Abbiamo stabilito che la tabella <b>"teacher"</b> è utile perchè permette di risparmiare dello spazio, quindi abbiamo deciso di tenerla e di aggiungerne un altra.
 
-  project(<br>
-    &emsp;id int(11),<br>
-    &emsp;title varchar(40),<br>
-    &emsp;description varchar(200),<br>
-    &emsp;final_vote int(11),<br>
-    &emsp;progress int(11),<br>
-    &emsp;comment longtext,<br>
-    &emsp;<b>id_responsible int(11)</b>,<br>
-    &emsp;<b>id_teacher_responsible int(11)</b>,<br>
-    &emsp;doc_path varchar(260),<br>
-    &emsp;link_repo text<br>
+```sql
+  project(
+    id int(11),
+    title varchar(40),
+    description varchar(200),
+    final_vote int(11),
+    progress int(11),
+    comment longtext,
+    id_responsible int(11),
+    id_teacher_responsible int(11)</b>,
+    doc_path varchar(260),
+    link_repo text
   )
+```
 
 ---
 

@@ -508,7 +508,35 @@ $query = "UPDATE `user` SET  name='$name', surname='$surname', granted='$granted
 $conn->query($query);
 ```
 
+#### Aggiungi
 
+La funzionalità che aggiunge un'utente anche questa viene gestita tramite un form di registrazione dove vengono inseriti i dati del nuovo utente ceh si vuole inserire nel database. In questo caso per l'aggiunta di un allievo e di un docente  bisogna creare due query diverse, per via dell'id che nel caso dell'allievo viene inserito nella tabella "user" e nel caso del docente veuene inserite sia nella tabella "teacher" che nella tabella "user".
+
+<b>Per gli allievi: </b>
+```php
+/*Inserisce nella tabella utenti i valori inseriti nel form di registrazione*/$query = "INSERT INTO `user` (`name`, `surname`, `granted`, `username`,`password`, `email`) VALUES ('".$name."', '".$surname."', '".$granted."','".$username."','".$password."','".$email."')";
+
+/**Esegue la query salvata nella variabile $query, la quale ricava i valori dal form sottostante*/
+$result = $conn->query($query);
+```
+
+<b>Per i docenti: </b>
+```php
+/*Inserisce nella tabella utenti il nuovo utente che
+* si sta creanto con i suoi valori ricavati dal form di registrazione*/
+$query = "INSERT INTO `user` (`name`, `surname`, `granted`, `username`,`password`, `email`) VALUES('".$name."', '".$surname."','".$granted."', '".$username."','".$password."','".$email."')";
+
+/**Esegue la query salvata nella variabile $query, la quale ricava i valori dal form sottostante*/
+$result = $conn->query($query);
+
+/*Inserisce nella tabella teacher l'ultimo id utilizzato, cioè quello inserito nella tabella user*/
+$query = "INSERT INTO teacher(id) VALUES ((SELECT LAST_INSERT_ID()))";
+
+/**Esegue la query salvata nella variabile $query*/
+$result = $conn->query($query);
+
+
+```
 
 
 

@@ -516,7 +516,8 @@ La funzionalità che aggiunge un'utente anche questa viene gestita tramite un fo
 
 <b>Per gli allievi: </b>
 ```php
-/*Inserisce nella tabella utenti i valori inseriti nel form di registrazione*/$query = "INSERT INTO `user` (`name`, `surname`, `granted`, `username`,`password`, `email`) VALUES ('".$name."', '".$surname."', '".$granted."','".$username."','".$password."','".$email."')";
+/*Inserisce nella tabella utenti i valori inseriti nel form di registrazione*/
+$query = "INSERT INTO `user` (`name`, `surname`, `granted`, `username`,`password`, `email`) VALUES ('".$name."', '".$surname."', '".$granted."','".$username."','".$password."','".$email."')";
 
 /**Esegue la query salvata nella variabile $query, la quale ricava i valori dal form sottostante*/
 $result = $conn->query($query);

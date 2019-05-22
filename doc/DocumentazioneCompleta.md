@@ -401,7 +401,7 @@ $result1 = $conn->query($query1);<br>
 ```
 Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossimo passaggio è creare la tabella e inserirgli in essa e ciò viene fatto nel seguente modo:
 ```html
-```php
+
 <i>while($row1 = $result->fetch_array(MYSQLI_ASSOC)){<br>
 <tr>
 <td>$row1['id']</td><br>
@@ -414,7 +414,7 @@ Queste due istruzioni ritornano i valori dei docenti e degli allievi, il prossim
 </tr>
 }
 </i><br>
-
+```
     Ora bisogna inserire anche la funzionalità che elimina e che modifica i dati come colonna presente in ogni riga (per ogni utente): <br>
 
     <td>

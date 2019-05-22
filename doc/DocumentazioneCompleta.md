@@ -439,8 +439,8 @@ L'ultima colonna è quella che definisce se l'untente è abilitato o disabilitat
 ```html
 <td>
   <select name="userState">
-    <option value='true'>True</option>
-    <option value='false'>False</option>
+    <option value='able'>True</option>
+    <option value='disable'>False</option>
   </select>
 </td>
 ```

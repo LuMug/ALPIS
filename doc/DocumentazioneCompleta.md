@@ -429,7 +429,7 @@ Ora bisogna inserire anche la funzionalità che elimina e che modifica i dati co
 L'ultima colonna è quella che definisce se l'untente è abilitato o disabilitato:
 ```html
 <td>
-  <select>
+  <select name="userState">
     <option value='true'>True</option>
     <option value='false'>False</option>
   </select>
@@ -437,7 +437,57 @@ L'ultima colonna è quella che definisce se l'untente è abilitato o disabilitat
 ```
 È presente anche l'aggiunta di un nuovo utente, l'utente cliccando il bottone presente sotto la tabella può creare un nuovo profilo di un allievo o di un docente.  
 
+La funzionalità che elimina un'utente riceve come parametro nell'url l'id dell'utente da eliminare. In base all'Id passato viene eseguita una query che elimina l'utente. Per eliminare un allievo prima bisogna eliminare l'id nella tabella "author" per poter eliminarlo anche dalla tabella "user". Invece per eliminare un docente bisogna eliminare l'id prima nella tabella "teacher" e poi nella tabella "user".
 
+<b>Per gli allievi: </b>
+```php
+/*
+* Ritorna l'Id dell'utente
+*/
+$userID = $_REQUEST['userID'];
+
+/*
+* Elimina l'id dell'utente prima dalla tabella autore per poter eliminarlo anche dalla tabella user
+*/
+$querys1 = "DELETE FROM `author` WHERE `id` ='$userID'";
+
+/**
+* Elimina l'utente dalla tabella user
+*/
+$querys = "DELETE FROM `user` WHERE `id` ='$userID'";
+
+//viene eseguita la query
+$conn->query($querys1);
+
+/*Ritorna alla pagina precedente (amministratore.php)*/
+header("Location: ".$_SERVER['HTTP_REFERER']);
+exit(0);
+```   
+
+<b>Per i docenti: </b>
+```php
+/*
+* Ritorna l'Id del docente
+*/
+$userID = $_REQUEST['userID'];
+
+/*
+* Elimina il docente prima dalla tabella teacher per poter eliminarlo anche dalla tabella user
+*/
+$querys1 = "DELETE FROM `teacher` WHERE `id` ='$userID'";
+
+/**
+* Elimina il docente dalla tabella user
+*/
+$querys = "DELETE FROM `user` WHERE `id` ='$userID'";
+
+//viene eseguita la query
+$conn->query($querys1);
+
+/*Ritorna alla pagina precedente (amministratore.php)*/
+header("Location: ".$_SERVER['HTTP_REFERER']);
+exit(0);
+```
 
 
 

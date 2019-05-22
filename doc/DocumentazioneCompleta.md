@@ -33,7 +33,7 @@
 
   - [Risultati test](#risultati-test)
 
-  - [Mancanze/limitazioni conosciute](#mancanze/limitazioni-conosciute)
+  - [Mancanze/limitazioni conosciute](#mancanzelimitazioni-conosciute)
 
 
 6. [Consuntivo](#consuntivo)

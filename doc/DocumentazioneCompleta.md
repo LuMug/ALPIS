@@ -102,15 +102,19 @@
   Il progetto consiste in un sito Web esistente che bisogna modificare e aggiungere le funzionalità richieste. Questo sito verrà utilizzato dai docenti e dagli allievi della scuola professionale di Trevano per gestire i progetti fatti durante il percorso scolastico.
 
 ---
+
 <br>
 
 ### Analisi dei costi e benefici
+
 ---
   |Categoria  |Costo|
   |----|----------------------------------------------|
   |Personale| 68 * 2 persone * 60 CHF/h |
   |**TOT**| **8'160 CHF** |
+
 ---
+
 <br>
 
 ### Analisi e specifica dei requisiti
@@ -301,7 +305,7 @@ I software presenti sui nostri PC:
 
 #### [REQ-4](#req-04) | Rivedere lo schema DB
   Aggiungere la colonna <b>"id_teacher_responsible"</b> alla tabella già esistente "project", questa nuova colonna servirà a definere quale è l'insegnate che è responsabile di questo progetto, invece <b>"id_responsible"</b> diventa l'id dell'utente responsabile del progetto.
-  Abbiamo stabilito che la tabella <b>"teacher"</b> è utile perchè permette di risparmiare dello spazio, quindi abbiamo deciso di tenerla e di aggiungerne un altra.
+  Abbiamo stabilito che la tabella <b>"teacher"</b> è utile perchè permette di risparmiare dello spazio, quindi abbiamo deciso di tenerla.
 
 ```mysql
   project(
@@ -686,6 +690,7 @@ $result = $conn->query($query);
 
 La ricerca all'interno dei file è limitata solo hai pdf che sono fanno parte dei progetti.
 La password si può ripristinare quante volte si vuole, magari si potrebbe limitare quante volte si può usufruirne in un determinato lasso di tempo.
+Il REQ-06 Non è stato completato e qundi manca l'implementazione di tutte le funzionalità su sito, anche se la parte database è stata completata.
 
 ---
 <br>

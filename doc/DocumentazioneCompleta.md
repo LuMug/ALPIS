@@ -391,7 +391,9 @@ $_SESSION['email'] = $email;
   <b>Per gli allievi: </b><br>
     &emsp;&emsp;$query = "Select * from user where not id IN (Select id from teacher)";<br>
     ```php
+    ```html  
     &emsp;&emsp;$result = $conn->query($query);<br>
+    ```
     ```
   <b>Per i docenti: </b><br>
     ```php

@@ -248,16 +248,19 @@ Le attività vengono svolte una alla volta, partendo dalla pianificazione fino a
 
 I software presenti sui nostri PC:
 - Atom 1.34.0
-- Microsoft Project 16.0
+- Microsoft Project 2016
+- Microsoft Word 2016
 - FileZilla 3.37.4
 - Sublime Text 3
+- InfinityDesigner 1.6.1 (Progettazione grafica)
+- CyberDuck 6.9.4 (Client FTP)
 ---
 <br>
 
 #### Hardware
 ---
 
-- Apple MacBook Pro 15" 2018, Processore Intel&reg; Core I7, RAM 16GB, Disk 512GB SSD, Mac OS X 10.14.3
+- Apple MacBook Pro 15" 2017, Processore Intel&reg; Core I7, RAM 16GB, Disk 512GB SSD, Mac OS X 10.14.3
 - Acer Aspire V Nitro, Intel&reg; Core I7, RAM 16GB, SSD 256GB e HDD 2TB,Windows 10 Home 64 bit
 
 ---
@@ -280,17 +283,19 @@ I software presenti sui nostri PC:
   Aggiungere la colonna <b>"link-repo"</b> alla tabella già esistente "project".
   La nuova colonna sarà di tipo testo.
 
-  project(<br>
-    &emsp;id int(11),<br>
-    &emsp;title varchar(40),<br>
-    &emsp;description varchar(200),<br>
-    &emsp;final_vote int(11),<br>
-    &emsp;progress int(11),<br>
-    &emsp;comment longtext,<br>
-    &emsp;id_responsible int(11),<br>
-    &emsp;doc_path varchar(260),<br>
-    &emsp;<b>link_repo text</b><br>
+```mysql
+  project(
+    id int(11),
+    title varchar(40),
+    description varchar(200),
+    final_vote int(11),
+    progress int(11),
+    comment longtext,
+    id_responsible int(11),
+    doc_path varchar(260),
+    link_repo text
   )
+```
 
 ---
 
@@ -298,7 +303,7 @@ I software presenti sui nostri PC:
   Aggiungere la colonna <b>"id_teacher_responsible"</b> alla tabella già esistente "project", questa nuova colonna servirà a definere quale è l'insegnate che è responsabile di questo progetto, invece <b>"id_responsible"</b> diventa l'id dell'utente responsabile del progetto.
   Abbiamo stabilito che la tabella <b>"teacher"</b> è utile perchè permette di risparmiare dello spazio, quindi abbiamo deciso di tenerla e di aggiungerne un altra.
 
-```sql
+```mysql
   project(
     id int(11),
     title varchar(40),

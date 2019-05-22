@@ -684,7 +684,8 @@ $result = $conn->query($query);
 
 ### Mancanze/limitazioni conosciute
 
-
+La ricerca all'interno dei file è limitata solo hai pdf che sono fanno parte dei progetti.
+La password si può ripristinare quante volte si vuole, magari si potrebbe limitare quante volte si può usufruirne in un determinato lasso di tempo.
 
 ---
 <br>

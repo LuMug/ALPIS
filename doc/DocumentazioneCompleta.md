@@ -367,18 +367,18 @@ Quando il l'amministratore effettua il login, devono essere visualizzati tutti i
 <b>...</b> <br>
 <i>// random number for identificate the email of the password </i><br>
 
-$_SESSION['restoreCode'] = hash("sha256", mt_rand(0, 100000000000), false); <br>
+$1_SESSION['restoreCode']"" = hash("sha256", mt_rand(0, 100000000000), false); <br>
 
 <i>// the message of the email </i><br>
 $msg = "Cliccare sul link presente in questa email per ripristinare la password<br>
 &emsp;&emsp;&emsp;&emsp;\n http://samtinfo.ch/lpiarch/ALPIS/changePassword.php?restoreCode="; <br>
-$msg = $msg.$_SESSION['restoreCode']; <br>
+$msg = $msg.$1_SESSION['restoreCode']; <br>
 
 <i>// send email</i> <br>
 mail($email,"ALPIS - Richiesta nuova password",$msg); <br>
 
 <i>//Insert the email of the user in the session </i><br>
-$_SESSION['email'] = $email; <br>
+$1_SESSION['email'] = $email; <br>
 <b>...</b>
 
 ---
@@ -386,7 +386,18 @@ $_SESSION['email'] = $email; <br>
 ### [REQ-08](#req-08) | Aggiungere le funzionalità Amministratore
   L'amministratore è colui che può gestire tutto ciò che riguarda gli utenti e i loro permessi. Si occupa di gestire i dati di un utente, di creare utenti nuovi nel caso ci sia il bisogno.
   <br>
-  Come primo passaggio bisogna creare una pagina con estensione <i> php </i>, in questo caso <i> "amministratore.php" </i>
+  Come primo passaggio bisogna creare una pagina con estensione <i> php </i>, in questo caso <i> "amministratore.php" </i>. Nella nuova pagina creata come primo passaggio bisogna ritornare i valori di tutti gli utenti presenti nel Database. In una tabella sono presenti gli allievi e nell'altra i docenti. Per ritornare i valori dal database bisogna creare una <i> query </i>che lo faccia, mostrata di seguito:
+
+  <b>Per gli allievi: </b><br>
+    $query = "Select * from user where not id IN (Select id from teacher)";
+    $result = $conn->query($query);
+  <b>Per i docenti: </b><br>
+    $query1 = "Select * from user where id IN (Select id from teacher)";
+    $result1 = $conn->query($query1);
+
+
+
+
 
 
 

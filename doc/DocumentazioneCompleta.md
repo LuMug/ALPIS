@@ -492,7 +492,8 @@ $conn->query($querys);
 header("Location: ".$_SERVER['HTTP_REFERER']);
 exit(0);
 ```
-La funzionalità che modifica i dati di un utente viene gestita tramite un form che ritorna i valori da inserire nel database nei rispettivi attributi. L'utente viene identificato con l'id che è stato salvato al momento che è stato scelto di fare la modifica. Per effettuare la modifica viene fatta una query che inserisce i valori ricevuti dal form:
+La funzionalità che modifica i dati di un utente viene gestita tramite un form che ritorna i valori da inserire nel database nei rispettivi attributi. L'utente viene identificato con l'id che è stato salvato al momento che è stato scelto di fare la modifica. Siccome non viene modificato l'id di un utente non bisogna modificare altre tabelle se non solo quella denominata "user".
+ Per effettuare la modifica viene fatta una query che inserisce i valori ricevuti dal form:
 
 ```php
 /*Modifica i dati di un utente specifico identificato con l'id */

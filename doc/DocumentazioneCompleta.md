@@ -380,7 +380,6 @@ mail($email,"ALPIS - Richiesta nuova password",$msg); <br>
 
 <i>//Insert the email of the user in the session </i><br>
 $_SESSION['email'] = $email; <br>
-<b>...</b>
 
 ```
 <br>

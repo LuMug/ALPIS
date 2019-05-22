@@ -15,14 +15,10 @@
 
   - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
 
-  - [Use case](#use-case)
-
   - [Pianificazione](#pianificazione)
 
 
 3. [Progettazione](#progettazione)
-
-  - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 
   - [Design dei dati e database](#design-dei-dati-e-database)
 

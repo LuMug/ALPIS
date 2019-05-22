@@ -111,8 +111,8 @@
 ---
   |Categoria  |Costo|
   |----|----------------------------------------------|
-  |Personale| totOre * 2 persone * 40 CHF/h |
-  |**TOT**| **TOT CHF** |
+  |Personale| 68 * 2 persone * 60 CHF/h |
+  |**TOT**| **8'160 CHF** |
 ---
 <br>
 
@@ -428,6 +428,8 @@ $1_SESSION['email'] = $email; <br>
         <option value='false'>False</option>
       </select>
     </td>
+
+    È presente anche l'aggiunta di un nuovo utente, l'utente cliccando il bottone presente sotto la tabella può creare un nuovo profilo di un allievo o di un docente.  
 
 
 
